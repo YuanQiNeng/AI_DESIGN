@@ -1,0 +1,858 @@
+{
+  "version": "1.0",
+  "unit": "mm",
+  "centerPos": {
+    "x": 8947,
+    "y": 9682.325396825396,
+    "z": 0
+  },
+  "floorHeight": 2700,
+  "wallHeight": 2700,
+  "totalArea": 168030952.38,
+  "outerPoints": [
+    [
+      {
+        "x": 6120,
+        "y": -120,
+        "z": 0
+      },
+      {
+        "x": 6120,
+        "y": 6776.507936507937,
+        "z": 0
+      },
+      {
+        "x": 11880,
+        "y": 6776.507936507937,
+        "z": 0
+      },
+      {
+        "x": 11880,
+        "y": 2380,
+        "z": 0
+      },
+      {
+        "x": 18120,
+        "y": 2380,
+        "z": 0
+      },
+      {
+        "x": 18120,
+        "y": 8620,
+        "z": 0
+      },
+      {
+        "x": 13617.960488500648,
+        "y": 8620,
+        "z": 0
+      },
+      {
+        "x": 13560,
+        "y": 12001.02849587115,
+        "z": 0
+      },
+      {
+        "x": 13560,
+        "y": 13001.439792699726,
+        "z": 0
+      },
+      {
+        "x": 13497.154555024792,
+        "y": 15620,
+        "z": 0
+      },
+      {
+        "x": 10120,
+        "y": 15620,
+        "z": 0
+      },
+      {
+        "x": 10120,
+        "y": 17620,
+        "z": 0
+      },
+      {
+        "x": 6001.589333807365,
+        "y": 17620,
+        "z": 0
+      },
+      {
+        "x": 5941.589333807365,
+        "y": 13120,
+        "z": 0
+      },
+      {
+        "x": 4380,
+        "y": 13120,
+        "z": 0
+      },
+      {
+        "x": 4380,
+        "y": 10620,
+        "z": 0
+      },
+      {
+        "x": 1880,
+        "y": 10620,
+        "z": 0
+      },
+      {
+        "x": 1880,
+        "y": 8620,
+        "z": 0
+      },
+      {
+        "x": -120,
+        "y": 8620,
+        "z": 0
+      },
+      {
+        "x": -120,
+        "y": -120,
+        "z": 0
+      }
+    ]
+  ],
+  "wallList": [
+    {
+      "id": "outer_wall_1",
+      "startPoint": {
+        "x": 0,
+        "y": 0
+      },
+      "endPoint": {
+        "x": 6000,
+        "y": 0
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "solid",
+      "material": ""
+    },
+    {
+      "id": "outer_wall_5",
+      "startPoint": {
+        "x": 12000,
+        "y": 2500
+      },
+      "endPoint": {
+        "x": 18000,
+        "y": 2500
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "solid",
+      "material": ""
+    },
+    {
+      "id": "outer_wall_6",
+      "startPoint": {
+        "x": 18000,
+        "y": 2500
+      },
+      "endPoint": {
+        "x": 18000,
+        "y": 8500
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "solid",
+      "material": ""
+    },
+    {
+      "id": "outer_wall_7",
+      "startPoint": {
+        "x": 18000,
+        "y": 8500
+      },
+      "endPoint": {
+        "x": 13500,
+        "y": 8500
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "solid",
+      "material": ""
+    },
+    {
+      "id": "outer_wall_8",
+      "startPoint": {
+        "x": 13500,
+        "y": 8500
+      },
+      "endPoint": {
+        "x": 13500,
+        "y": 13000
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "solid",
+      "material": ""
+    },
+    {
+      "id": "outer_wall_9",
+      "startPoint": {
+        "x": 13500,
+        "y": 13000
+      },
+      "endPoint": {
+        "x": 4500,
+        "y": 13000
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "solid",
+      "material": ""
+    },
+    {
+      "id": "outer_wall_10",
+      "startPoint": {
+        "x": 4500,
+        "y": 13000
+      },
+      "endPoint": {
+        "x": 4500,
+        "y": 8500
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "solid",
+      "material": ""
+    },
+    {
+      "id": "outer_wall_11",
+      "startPoint": {
+        "x": 4500,
+        "y": 8500
+      },
+      "endPoint": {
+        "x": 0,
+        "y": 8500
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "solid",
+      "material": ""
+    },
+    {
+      "id": "outer_wall_12",
+      "startPoint": {
+        "x": 0,
+        "y": 8500
+      },
+      "endPoint": {
+        "x": 0,
+        "y": 0
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "solid",
+      "material": ""
+    },
+    {
+      "id": "outer_wall_4_m",
+      "startPoint": {
+        "x": 12000,
+        "y": 2500
+      },
+      "endPoint": {
+        "x": 12000,
+        "y": 8500
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "solid",
+      "material": ""
+    },
+    {
+      "id": "outer_wall_2_m",
+      "startPoint": {
+        "x": 6000,
+        "y": 0
+      },
+      "endPoint": {
+        "x": 6000,
+        "y": 13000
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "solid",
+      "material": ""
+    },
+    {
+      "id": "master_bath_vertical",
+      "startPoint": {
+        "x": 2000,
+        "y": 8500
+      },
+      "endPoint": {
+        "x": 2000,
+        "y": 13000
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    },
+    {
+      "id": "master_balcony_horizontal",
+      "startPoint": {
+        "x": 2000,
+        "y": 10500
+      },
+      "endPoint": {
+        "x": 6000,
+        "y": 10500
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    },
+    {
+      "id": "bedroom_2_left",
+      "startPoint": {
+        "x": 6120,
+        "y": 13000
+      },
+      "endPoint": {
+        "x": 6120,
+        "y": 17500
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    },
+    {
+      "id": "bedroom_2_right",
+      "startPoint": {
+        "x": 10000,
+        "y": 13000
+      },
+      "endPoint": {
+        "x": 10000,
+        "y": 17500
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    },
+    {
+      "id": "bedroom_2_top",
+      "startPoint": {
+        "x": 6120,
+        "y": 17500
+      },
+      "endPoint": {
+        "x": 10000,
+        "y": 17500
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    },
+    {
+      "id": "living_balcony_top",
+      "startPoint": {
+        "x": 10000,
+        "y": 15500
+      },
+      "endPoint": {
+        "x": 13380,
+        "y": 15500
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    },
+    {
+      "id": "living_balcony_right",
+      "startPoint": {
+        "x": 13380,
+        "y": 13000
+      },
+      "endPoint": {
+        "x": 13380,
+        "y": 15500
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    },
+    {
+      "id": "kitchen_top_new",
+      "startPoint": {
+        "x": 13380,
+        "y": 12000
+      },
+      "endPoint": {
+        "x": 18000,
+        "y": 12000
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    },
+    {
+      "id": "wall_1",
+      "startPoint": {
+        "x": 6000,
+        "y": 6896.507936507937,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 12000,
+        "y": 6896.507936507937,
+        "z": 0
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    }
+  ],
+  "roomList": [
+    {
+      "id": "room_6",
+      "name": "未命名",
+      "englishName": "Unnamed",
+      "area": 79370952.38,
+      "points": [
+        {
+          "x": 12120,
+          "y": 2620,
+          "z": 0
+        },
+        {
+          "x": 17880,
+          "y": 2620,
+          "z": 0
+        },
+        {
+          "x": 17880,
+          "y": 8380,
+          "z": 0
+        },
+        {
+          "x": 13380,
+          "y": 8380,
+          "z": 0
+        },
+        {
+          "x": 6120,
+          "y": 7016.507936507937,
+          "z": 0
+        },
+        {
+          "x": 11880,
+          "y": 7016.507936507937,
+          "z": 0
+        },
+        {
+          "x": 11880,
+          "y": 8500,
+          "z": 0
+        },
+        {
+          "x": 12120,
+          "y": 8500,
+          "z": 0
+        }
+      ],
+      "wallIds": [
+        "outer_wall_4_m",
+        "outer_wall_4_m",
+        "outer_wall_5",
+        "outer_wall_6",
+        "outer_wall_7",
+        "outer_wall_8",
+        "kitchen_top_new",
+        "kitchen_top_new",
+        "outer_wall_8",
+        "outer_wall_9",
+        "outer_wall_9",
+        "outer_wall_9",
+        "outer_wall_9",
+        "outer_wall_2_m",
+        "outer_wall_2_m",
+        "wall_1",
+        "outer_wall_4_m"
+      ],
+      "bbox": {
+        "min": {
+          "x": 6120,
+          "y": 2620
+        },
+        "max": {
+          "x": 17880,
+          "y": 8500
+        }
+      }
+    },
+    {
+      "id": "room_5",
+      "name": "未命名",
+      "englishName": "Unnamed",
+      "area": 54000000,
+      "points": [
+        {
+          "x": 5880,
+          "y": 120,
+          "z": 0
+        },
+        {
+          "x": 5880,
+          "y": 10380,
+          "z": 0
+        },
+        {
+          "x": 4620,
+          "y": 10380,
+          "z": 0
+        },
+        {
+          "x": 4620,
+          "y": 8380,
+          "z": 0
+        },
+        {
+          "x": 120,
+          "y": 8380,
+          "z": 0
+        },
+        {
+          "x": 120,
+          "y": 120,
+          "z": 0
+        }
+      ],
+      "wallIds": [
+        "outer_wall_1",
+        "outer_wall_2_m",
+        "outer_wall_2_m",
+        "master_balcony_horizontal",
+        "outer_wall_10",
+        "outer_wall_11",
+        "outer_wall_11",
+        "outer_wall_12"
+      ],
+      "bbox": {
+        "min": {
+          "x": 120,
+          "y": 120
+        },
+        "max": {
+          "x": 5880,
+          "y": 10380
+        }
+      }
+    },
+    {
+      "id": "room_4",
+      "name": "未命名",
+      "englishName": "Unnamed",
+      "area": 17460000,
+      "points": [
+        {
+          "x": 9880,
+          "y": 13120,
+          "z": 0
+        },
+        {
+          "x": 9880,
+          "y": 17380,
+          "z": 0
+        },
+        {
+          "x": 6240,
+          "y": 17380,
+          "z": 0
+        },
+        {
+          "x": 6240,
+          "y": 13120,
+          "z": 0
+        }
+      ],
+      "wallIds": [
+        "outer_wall_9",
+        "bedroom_2_right",
+        "bedroom_2_right",
+        "bedroom_2_top",
+        "bedroom_2_left"
+      ],
+      "bbox": {
+        "min": {
+          "x": 6240,
+          "y": 13120
+        },
+        "max": {
+          "x": 9880,
+          "y": 17380
+        }
+      }
+    },
+    {
+      "id": "room_3",
+      "name": "未命名",
+      "englishName": "Unnamed",
+      "area": 8450000,
+      "points": [
+        {
+          "x": 13260,
+          "y": 13120,
+          "z": 0
+        },
+        {
+          "x": 13260,
+          "y": 15380,
+          "z": 0
+        },
+        {
+          "x": 10120,
+          "y": 15380,
+          "z": 0
+        },
+        {
+          "x": 10120,
+          "y": 13120,
+          "z": 0
+        }
+      ],
+      "wallIds": [
+        "outer_wall_9",
+        "living_balcony_right",
+        "living_balcony_top",
+        "bedroom_2_right"
+      ],
+      "bbox": {
+        "min": {
+          "x": 10120,
+          "y": 13120
+        },
+        "max": {
+          "x": 13260,
+          "y": 15380
+        }
+      }
+    },
+    {
+      "id": "room_2",
+      "name": "未命名",
+      "englishName": "Unnamed",
+      "area": 5000000,
+      "points": [
+        {
+          "x": 4380,
+          "y": 8620,
+          "z": 0
+        },
+        {
+          "x": 4380,
+          "y": 10380,
+          "z": 0
+        },
+        {
+          "x": 2120,
+          "y": 10380,
+          "z": 0
+        },
+        {
+          "x": 2120,
+          "y": 8620,
+          "z": 0
+        }
+      ],
+      "wallIds": [
+        "outer_wall_11",
+        "outer_wall_10",
+        "master_balcony_horizontal",
+        "master_bath_vertical"
+      ],
+      "bbox": {
+        "min": {
+          "x": 2120,
+          "y": 8620
+        },
+        "max": {
+          "x": 4380,
+          "y": 10380
+        }
+      }
+    },
+    {
+      "id": "room_1",
+      "name": "未命名",
+      "englishName": "Unnamed",
+      "area": 3750000,
+      "points": [
+        {
+          "x": 4620,
+          "y": 12880,
+          "z": 0
+        },
+        {
+          "x": 4620,
+          "y": 10620,
+          "z": 0
+        },
+        {
+          "x": 5880,
+          "y": 10620,
+          "z": 0
+        },
+        {
+          "x": 5880,
+          "y": 12880,
+          "z": 0
+        }
+      ],
+      "wallIds": [
+        "outer_wall_9",
+        "outer_wall_10",
+        "master_balcony_horizontal",
+        "outer_wall_2_m"
+      ],
+      "bbox": {
+        "min": {
+          "x": 4620,
+          "y": 10620
+        },
+        "max": {
+          "x": 5880,
+          "y": 12880
+        }
+      }
+    }
+  ],
+  "doorList": [],
+  "windowList": [],
+  "beamList": [],
+  "columnList": []
+}

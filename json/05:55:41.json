@@ -1,0 +1,728 @@
+{
+    "wallList": [
+        {
+            "id": "wall_outer_1",
+            "startPoint": {
+                "x": 0,
+                "y": 0
+            },
+            "endPoint": {
+                "x": 12000,
+                "y": 0
+            },
+            "thickness": 240,
+            "height": 2700,
+            "wallNormal": {
+                "x": 0,
+                "y": -1,
+                "z": 0
+            },
+            "leftRight": "left",
+            "wallType": "solid",
+            "material": "钢筋混凝土"
+        },
+        {
+            "id": "wall_outer_2",
+            "startPoint": {
+                "x": 12000,
+                "y": 0
+            },
+            "endPoint": {
+                "x": 12000,
+                "y": 3000
+            },
+            "thickness": 240,
+            "height": 2700,
+            "wallNormal": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "leftRight": "left",
+            "wallType": "solid",
+            "material": "钢筋混凝土"
+        },
+        {
+            "id": "wall_outer_4",
+            "startPoint": {
+                "x": 14000,
+                "y": 3000
+            },
+            "endPoint": {
+                "x": 14000,
+                "y": 6000
+            },
+            "thickness": 240,
+            "height": 2700,
+            "wallNormal": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "leftRight": "left",
+            "wallType": "solid",
+            "material": "钢筋混凝土"
+        },
+        {
+            "id": "wall_outer_7",
+            "startPoint": {
+                "x": 8000,
+                "y": 9000
+            },
+            "endPoint": {
+                "x": 0,
+                "y": 9000
+            },
+            "thickness": 240,
+            "height": 2700,
+            "wallNormal": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "leftRight": "left",
+            "wallType": "solid",
+            "material": "钢筋混凝土"
+        },
+        {
+            "id": "wall_outer_8",
+            "startPoint": {
+                "x": 0,
+                "y": 9000
+            },
+            "endPoint": {
+                "x": 0,
+                "y": 0
+            },
+            "thickness": 240,
+            "height": 2700,
+            "wallNormal": {
+                "x": -1,
+                "y": 0,
+                "z": 0
+            },
+            "leftRight": "left",
+            "wallType": "solid",
+            "material": "钢筋混凝土"
+        },
+        {
+            "id": "wall_master_bathroom",
+            "startPoint": {
+                "x": 10000,
+                "y": 3000
+            },
+            "endPoint": {
+                "x": 10000,
+                "y": 0
+            },
+            "thickness": 150,
+            "height": 2400,
+            "wallNormal": {
+                "x": -1,
+                "y": 0,
+                "z": 0
+            },
+            "leftRight": "left",
+            "wallType": "partition",
+            "material": "轻钢龙骨石膏板"
+        },
+        {
+            "id": "wall_master_bedroom_sep",
+            "startPoint": {
+                "x": 12000,
+                "y": 1500
+            },
+            "endPoint": {
+                "x": 10000,
+                "y": 1500
+            },
+            "thickness": 150,
+            "height": 2400,
+            "wallNormal": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "leftRight": "left",
+            "wallType": "partition",
+            "material": "轻钢龙骨石膏板"
+        },
+        {
+            "id": "wall_outer_5_m",
+            "startPoint": {
+                "x": 0,
+                "y": 6000
+            },
+            "endPoint": {
+                "x": 14000,
+                "y": 6000
+            },
+            "thickness": 240,
+            "height": 2700,
+            "wallNormal": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "leftRight": "left",
+            "wallType": "solid",
+            "material": "钢筋混凝土"
+        },
+        {
+            "id": "wall_outer_6_m",
+            "startPoint": {
+                "x": 8000,
+                "y": 3000
+            },
+            "endPoint": {
+                "x": 8000,
+                "y": 9000
+            },
+            "thickness": 240,
+            "height": 2700,
+            "wallNormal": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "leftRight": "left",
+            "wallType": "solid",
+            "material": "钢筋混凝土"
+        },
+        {
+            "id": "wall_inner_1_m",
+            "startPoint": {
+                "x": 0,
+                "y": 3000
+            },
+            "endPoint": {
+                "x": 14000,
+                "y": 3000
+            },
+            "thickness": 200,
+            "height": 2700,
+            "wallNormal": {
+                "x": 0,
+                "y": -1,
+                "z": 0
+            },
+            "leftRight": "left",
+            "wallType": "partition",
+            "material": "轻质砖"
+        }
+    ],
+    "version": "1.0",
+    "unit": "mm",
+    "floorHeight": 2700,
+    "wallHeight": 2700,
+    "totalArea": 2.55,
+    "centerPos": {
+        "x": 8529.411764705883,
+        "y": 4147.058823529412,
+        "z": 0
+    },
+    "outerPoints": [
+        [
+            {
+                "x": 10000,
+                "y": -120,
+                "z": 0
+            },
+            {
+                "x": 12120,
+                "y": -120,
+                "z": 0
+            },
+            {
+                "x": 12120,
+                "y": 1500,
+                "z": 0
+            },
+            {
+                "x": 12120,
+                "y": 2880,
+                "z": 0
+            },
+            {
+                "x": 14120,
+                "y": 2880,
+                "z": 0
+            },
+            {
+                "x": 14120,
+                "y": 6120,
+                "z": 0
+            },
+            {
+                "x": 8120,
+                "y": 6120,
+                "z": 0
+            },
+            {
+                "x": 8120,
+                "y": 9120,
+                "z": 0
+            },
+            {
+                "x": -119.99999999999886,
+                "y": 9120,
+                "z": 0
+            },
+            {
+                "x": -120,
+                "y": 6000,
+                "z": 0
+            },
+            {
+                "x": -120,
+                "y": 3000,
+                "z": 0
+            },
+            {
+                "x": -120,
+                "y": -120,
+                "z": 0
+            }
+        ]
+    ],
+    "roomList": [
+        {
+            "id": "room_20",
+            "name": "主卧卫生间",
+            "englishName": "",
+            "area": 0.03,
+            "points": [
+                {
+                    "x": 12000,
+                    "y": 1500,
+                    "z": 0
+                },
+                {
+                    "x": 12000,
+                    "y": 3000,
+                    "z": 0
+                },
+                {
+                    "x": 10000,
+                    "y": 3000,
+                    "z": 0
+                },
+                {
+                    "x": 10000,
+                    "y": 1500,
+                    "z": 0
+                }
+            ],
+            "wallIds": [
+                "wall_outer_2",
+                "wall_inner_1",
+                "wall_master_bathroom",
+                "wall_master_bedroom_sep"
+            ],
+            "bbox": {
+                "min": {
+                    "x": 10000,
+                    "y": 1500
+                },
+                "max": {
+                    "x": 12000,
+                    "y": 3000
+                }
+            }
+        },
+        {
+            "id": "room_27",
+            "name": "主卧阳台",
+            "englishName": "",
+            "area": 0.03,
+            "points": [
+                {
+                    "x": 10000,
+                    "y": 0,
+                    "z": 0
+                },
+                {
+                    "x": 12000,
+                    "y": 0,
+                    "z": 0
+                },
+                {
+                    "x": 12000,
+                    "y": 1500,
+                    "z": 0
+                },
+                {
+                    "x": 10000,
+                    "y": 1500,
+                    "z": 0
+                }
+            ],
+            "wallIds": [
+                "wall_outer_1",
+                "wall_outer_2",
+                "wall_master_bedroom_sep",
+                "wall_master_bathroom"
+            ],
+            "bbox": {
+                "min": {
+                    "x": 10000,
+                    "y": 0
+                },
+                "max": {
+                    "x": 12000,
+                    "y": 1500
+                }
+            }
+        },
+        {
+            "id": "room_9",
+            "name": "主卧",
+            "englishName": "",
+            "area": 0.18,
+            "points": [
+                {
+                    "x": 12000,
+                    "y": 3000,
+                    "z": 0
+                },
+                {
+                    "x": 14000,
+                    "y": 3000,
+                    "z": 0
+                },
+                {
+                    "x": 14000,
+                    "y": 6000,
+                    "z": 0
+                },
+                {
+                    "x": 8000,
+                    "y": 6000,
+                    "z": 0
+                },
+                {
+                    "x": 8000,
+                    "y": 3000,
+                    "z": 0
+                },
+                {
+                    "x": 10000,
+                    "y": 3000,
+                    "z": 0
+                }
+            ],
+            "wallIds": [
+                "wall_inner_1",
+                "wall_outer_4",
+                "wall_outer_5",
+                "wall_outer_6"
+            ],
+            "bbox": {
+                "min": {
+                    "x": 8000,
+                    "y": 3000
+                },
+                "max": {
+                    "x": 14000,
+                    "y": 6000
+                }
+            }
+        },
+        {
+            "id": "room_6",
+            "name": "次卧",
+            "englishName": "",
+            "area": 0.24,
+            "points": [
+                {
+                    "x": 8000,
+                    "y": 6000,
+                    "z": 0
+                },
+                {
+                    "x": 8000,
+                    "y": 9000,
+                    "z": 0
+                },
+                {
+                    "x": 0,
+                    "y": 9000,
+                    "z": 0
+                },
+                {
+                    "x": 0,
+                    "y": 6000,
+                    "z": 0
+                }
+            ],
+            "wallIds": [
+                "wall_outer_6",
+                "wall_outer_7",
+                "wall_outer_8",
+                "wall_outer_5"
+            ],
+            "bbox": {
+                "min": {
+                    "x": 0,
+                    "y": 6000
+                },
+                "max": {
+                    "x": 8000,
+                    "y": 9000
+                }
+            }
+        },
+        {
+            "id": "room_7",
+            "name": "厨房",
+            "englishName": "",
+            "area": 0.24,
+            "points": [
+                {
+                    "x": 8000,
+                    "y": 6000,
+                    "z": 0
+                },
+                {
+                    "x": 8000,
+                    "y": 3000,
+                    "z": 0
+                },
+                {
+                    "x": 0,
+                    "y": 3000,
+                    "z": 0
+                },
+                {
+                    "x": 0,
+                    "y": 6000,
+                    "z": 0
+                }
+            ],
+            "wallIds": [
+                "wall_outer_6",
+                "wall_inner_1",
+                "wall_outer_8",
+                "wall_outer_5"
+            ],
+            "bbox": {
+                "min": {
+                    "x": 0,
+                    "y": 3000
+                },
+                "max": {
+                    "x": 8000,
+                    "y": 6000
+                }
+            }
+        },
+        {
+            "id": "room_28",
+            "name": "客厅阳台",
+            "englishName": "",
+            "area": 0.3,
+            "points": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                {
+                    "x": 10000,
+                    "y": 0,
+                    "z": 0
+                },
+                {
+                    "x": 10000,
+                    "y": 1500,
+                    "z": 0
+                },
+                {
+                    "x": 10000,
+                    "y": 3000,
+                    "z": 0
+                },
+                {
+                    "x": 8000,
+                    "y": 3000,
+                    "z": 0
+                },
+                {
+                    "x": 0,
+                    "y": 3000,
+                    "z": 0
+                }
+            ],
+            "wallIds": [
+                "wall_outer_1",
+                "wall_master_bathroom",
+                "wall_inner_1",
+                "wall_outer_8"
+            ],
+            "bbox": {
+                "min": {
+                    "x": 0,
+                    "y": 0
+                },
+                "max": {
+                    "x": 10000,
+                    "y": 3000
+                }
+            }
+        },
+        {
+            "id": "room_36",
+            "name": "",
+            "englishName": "",
+            "area": 0.75,
+            "points": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                {
+                    "x": 10000,
+                    "y": 0,
+                    "z": 0
+                },
+                {
+                    "x": 10000,
+                    "y": 1500,
+                    "z": 0
+                },
+                {
+                    "x": 12000,
+                    "y": 1500,
+                    "z": 0
+                },
+                {
+                    "x": 12000,
+                    "y": 3000,
+                    "z": 0
+                },
+                {
+                    "x": 14000,
+                    "y": 3000,
+                    "z": 0
+                },
+                {
+                    "x": 14000,
+                    "y": 6000,
+                    "z": 0
+                },
+                {
+                    "x": 8000,
+                    "y": 6000,
+                    "z": 0
+                },
+                {
+                    "x": 0,
+                    "y": 6000,
+                    "z": 0
+                },
+                {
+                    "x": 0,
+                    "y": 3000,
+                    "z": 0
+                }
+            ],
+            "wallIds": [
+                "wall_outer_1",
+                "wall_master_bathroom",
+                "wall_master_bedroom_sep",
+                "wall_outer_2",
+                "wall_inner_1",
+                "wall_outer_4",
+                "wall_outer_5",
+                "wall_outer_8"
+            ],
+            "bbox": {
+                "min": {
+                    "x": 0,
+                    "y": 0
+                },
+                "max": {
+                    "x": 14000,
+                    "y": 6000
+                }
+            }
+        },
+        {
+            "id": "room_12",
+            "name": "客厅",
+            "englishName": "",
+            "area": 0.78,
+            "points": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                {
+                    "x": 10000,
+                    "y": 0,
+                    "z": 0
+                },
+                {
+                    "x": 12000,
+                    "y": 0,
+                    "z": 0
+                },
+                {
+                    "x": 12000,
+                    "y": 1500,
+                    "z": 0
+                },
+                {
+                    "x": 12000,
+                    "y": 3000,
+                    "z": 0
+                },
+                {
+                    "x": 14000,
+                    "y": 3000,
+                    "z": 0
+                },
+                {
+                    "x": 14000,
+                    "y": 6000,
+                    "z": 0
+                },
+                {
+                    "x": 8000,
+                    "y": 6000,
+                    "z": 0
+                },
+                {
+                    "x": 0,
+                    "y": 6000,
+                    "z": 0
+                },
+                {
+                    "x": 0,
+                    "y": 3000,
+                    "z": 0
+                }
+            ],
+            "wallIds": [
+                "wall_outer_1",
+                "wall_outer_2",
+                "wall_inner_1",
+                "wall_outer_4",
+                "wall_outer_5",
+                "wall_outer_8"
+            ],
+            "bbox": {
+                "min": {
+                    "x": 0,
+                    "y": 0
+                },
+                "max": {
+                    "x": 14000,
+                    "y": 6000
+                }
+            }
+        }
+    ]
+}

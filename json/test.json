@@ -1,0 +1,514 @@
+{
+  "wallList": [
+    {
+      "id": "wall_1",
+      "startPoint": {
+        "x": 6597.499999999998,
+        "y": 4542.499999999999,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 10537.5,
+        "y": 4542.499999999999,
+        "z": 0
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    },
+    {
+      "id": "wall_2",
+      "startPoint": {
+        "x": 10537.5,
+        "y": 4542.499999999999,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 10537.5,
+        "y": 522.4999999999994,
+        "z": 0
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    },
+    {
+      "id": "wall_3",
+      "startPoint": {
+        "x": 10537.5,
+        "y": 522.4999999999994,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 15377.5,
+        "y": 522.4999999999994,
+        "z": 0
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    },
+    {
+      "id": "wall_4",
+      "startPoint": {
+        "x": 15377.5,
+        "y": 522.4999999999994,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 15377.5,
+        "y": 4542.499999999999,
+        "z": 0
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    },
+    {
+      "id": "wall_5",
+      "startPoint": {
+        "x": 15377.5,
+        "y": 4542.499999999999,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 20577.5,
+        "y": 4542.499999999999,
+        "z": 0
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    },
+    {
+      "id": "wall_6",
+      "startPoint": {
+        "x": 20577.5,
+        "y": 4542.499999999999,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 20577.5,
+        "y": 11882.5,
+        "z": 0
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    },
+    {
+      "id": "wall_7",
+      "startPoint": {
+        "x": 20577.5,
+        "y": 11882.5,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 15377.5,
+        "y": 11882.5,
+        "z": 0
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    },
+    {
+      "id": "wall_8",
+      "startPoint": {
+        "x": 15377.5,
+        "y": 11882.5,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 15377.5,
+        "y": 15962.5,
+        "z": 0
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    },
+    {
+      "id": "wall_9",
+      "startPoint": {
+        "x": 15377.5,
+        "y": 15962.5,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 8897.499999999998,
+        "y": 15962.5,
+        "z": 0
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    },
+    {
+      "id": "wall_10",
+      "startPoint": {
+        "x": 8897.499999999998,
+        "y": 15962.5,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 8897.499999999998,
+        "y": 19242.5,
+        "z": 0
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    },
+    {
+      "id": "wall_11",
+      "startPoint": {
+        "x": 8897.499999999998,
+        "y": 19242.5,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 3657.4999999999986,
+        "y": 19242.5,
+        "z": 0
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    },
+    {
+      "id": "wall_12",
+      "startPoint": {
+        "x": 3657.4999999999986,
+        "y": 19242.5,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 3657.4999999999986,
+        "y": 14382.5,
+        "z": 0
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    },
+    {
+      "id": "wall_13",
+      "startPoint": {
+        "x": 3657.4999999999986,
+        "y": 14382.5,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 6554.999999999998,
+        "y": 14382.5,
+        "z": 0
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    },
+    {
+      "id": "wall_14",
+      "startPoint": {
+        "x": 6554.999999999998,
+        "y": 14382.5,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 6554.999999999998,
+        "y": 7387.5,
+        "z": 0
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    },
+    {
+      "id": "wall_15",
+      "startPoint": {
+        "x": 6554.999999999998,
+        "y": 7387.5,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 3657.4999999999986,
+        "y": 7387.5,
+        "z": 0
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    },
+    {
+      "id": "wall_16",
+      "startPoint": {
+        "x": 3657.4999999999986,
+        "y": 7387.5,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 3657.4999999999986,
+        "y": 4542.499999999999,
+        "z": 0
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    },
+    {
+      "id": "wall_17",
+      "startPoint": {
+        "x": 3657.4999999999986,
+        "y": 4542.499999999999,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 6597.499999999998,
+        "y": 4542.499999999999,
+        "z": 0
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    },
+    {
+      "id": "wall_18",
+      "startPoint": {
+        "x": 10537.5,
+        "y": 4542.499999999999,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 15377.5,
+        "y": 4542.499999999999,
+        "z": 0
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    },
+    {
+      "id": "wall_19",
+      "startPoint": {
+        "x": 15377.5,
+        "y": 4542.499999999999,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 15377.5,
+        "y": 11882.5,
+        "z": 0
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    },
+    {
+      "id": "wall_20",
+      "startPoint": {
+        "x": 6554.999999999998,
+        "y": 14382.5,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 8897.499999999998,
+        "y": 14382.5,
+        "z": 0
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    },
+    {
+      "id": "wall_21",
+      "startPoint": {
+        "x": 8897.499999999998,
+        "y": 14382.5,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 8897.499999999998,
+        "y": 15962.5,
+        "z": 0
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    },
+    {
+      "id": "wall_22",
+      "startPoint": {
+        "x": 6554.999999999998,
+        "y": 7387.5,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 6597.499999999998,
+        "y": 4542.499999999999,
+        "z": 0
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    }
+  ],
+  "doorList": [],
+  "windowList": [],
+  "beamList": [],
+  "columnList": []
+}

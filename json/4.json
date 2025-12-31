@@ -1,0 +1,318 @@
+{
+  "version": "1.0",
+  "unit": "mm",
+  "centerPos": {
+    "x": 8130.714285714285,
+    "y": 5777.142857142856,
+    "z": 0
+  },
+  "floorHeight": 2700,
+  "wallHeight": 2700,
+  "totalArea": 30673400,
+  "outerPoints": [
+    [
+      {
+        "x": 11510,
+        "y": 2240,
+        "z": 0
+      },
+      {
+        "x": 11510,
+        "y": 6520,
+        "z": 0
+      },
+      {
+        "x": 9487.44710050382,
+        "y": 6520,
+        "z": 0
+      },
+      {
+        "x": 9447.44710050382,
+        "y": 8380,
+        "z": 0
+      },
+      {
+        "x": 6640,
+        "y": 8380,
+        "z": 0
+      },
+      {
+        "x": 6640,
+        "y": 6520,
+        "z": 0
+      },
+      {
+        "x": 4870,
+        "y": 6520,
+        "z": 0
+      },
+      {
+        "x": 4870,
+        "y": 2240,
+        "z": 0
+      }
+    ]
+  ],
+  "wallList": [
+    {
+      "id": "wall_23",
+      "startPoint": {
+        "x": 4990,
+        "y": 2360,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 11390,
+        "y": 2360,
+        "z": 0
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    },
+    {
+      "id": "wall_24",
+      "startPoint": {
+        "x": 11390,
+        "y": 2360,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 11390,
+        "y": 6400,
+        "z": 0
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    },
+    {
+      "id": "wall_25",
+      "startPoint": {
+        "x": 11390,
+        "y": 6400,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 4990,
+        "y": 6400,
+        "z": 0
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    },
+    {
+      "id": "wall_26",
+      "startPoint": {
+        "x": 4990,
+        "y": 6400,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 4990,
+        "y": 2360,
+        "z": 0
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    },
+    {
+      "id": "wall_27",
+      "startPoint": {
+        "x": 6760,
+        "y": 6400,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 6760,
+        "y": 8260,
+        "z": 0
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    },
+    {
+      "id": "wall_28",
+      "startPoint": {
+        "x": 6760,
+        "y": 8260,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 9330,
+        "y": 8260,
+        "z": 0
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    },
+    {
+      "id": "wall_29",
+      "startPoint": {
+        "x": 9330,
+        "y": 8260,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 9370,
+        "y": 6400,
+        "z": 0
+      },
+      "thickness": 240,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0.9997688395715764,
+        "y": 0.02150040515207691,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": ""
+    }
+  ],
+  "roomList": [
+    {
+      "id": "room_2",
+      "name": "客餐厅",
+      "englishName": "客餐厅",
+      "area": 25856000,
+      "points": [
+        {
+          "x": 11270,
+          "y": 2480,
+          "z": 0
+        },
+        {
+          "x": 11270,
+          "y": 6280,
+          "z": 0
+        },
+        {
+          "x": 6760,
+          "y": 6280,
+          "z": 0
+        },
+        {
+          "x": 4990,
+          "y": 6280,
+          "z": 0
+        },
+        {
+          "x": 4990,
+          "y": 2480,
+          "z": 0
+        }
+      ],
+      "wallIds": [
+        "wall_23",
+        "wall_24",
+        "wall_25",
+        "wall_26"
+      ],
+      "bbox": {
+        "min": {
+          "x": 4990,
+          "y": 2480
+        },
+        "max": {
+          "x": 11270,
+          "y": 6280
+        }
+      }
+    },
+    {
+      "id": "room_1",
+      "name": "次卧",
+      "englishName": "Secondary Bedroom",
+      "area": 4817400,
+      "points": [
+        {
+          "x": 9247.3916091736,
+          "y": 6520,
+          "z": 0
+        },
+        {
+          "x": 9212.55289949618,
+          "y": 8140,
+          "z": 0
+        },
+        {
+          "x": 6880,
+          "y": 8140,
+          "z": 0
+        },
+        {
+          "x": 6880,
+          "y": 6520,
+          "z": 0
+        }
+      ],
+      "wallIds": [
+        "wall_25",
+        "wall_27",
+        "wall_28",
+        "wall_29"
+      ],
+      "bbox": {
+        "min": {
+          "x": 6880,
+          "y": 6520
+        },
+        "max": {
+          "x": 9247.3916091736,
+          "y": 8140
+        }
+      }
+    }
+  ],
+  "doorList": [],
+  "windowList": [],
+  "beamList": [],
+  "columnList": []
+}

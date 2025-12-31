@@ -1,0 +1,1663 @@
+{
+  "version": "1.0",
+  "unit": "mm",
+  "centerPos": {
+    "x": 13727.80769230769,
+    "y": 9146.423076923078,
+    "z": 0
+  },
+  "floorHeight": 2700,
+  "wallHeight": 2700,
+  "totalArea": 144289875,
+  "outerPoints": [
+    [
+      {
+        "x": 15355,
+        "y": 1327.936525612472,
+        "z": 0
+      },
+      {
+        "x": 18159,
+        "y": 1327.936525612472,
+        "z": 0
+      },
+      {
+        "x": 18159,
+        "y": 5795,
+        "z": 0
+      },
+      {
+        "x": 15570.302194187752,
+        "y": 5795,
+        "z": 0
+      },
+      {
+        "x": 15603.123421268148,
+        "y": 10516.499999999998,
+        "z": 0
+      },
+      {
+        "x": 16918,
+        "y": 10516.499999999998,
+        "z": 0
+      },
+      {
+        "x": 19485,
+        "y": 10516.499999999998,
+        "z": 0
+      },
+      {
+        "x": 19485,
+        "y": 13083.000000000002,
+        "z": 0
+      },
+      {
+        "x": 19485,
+        "y": 16822,
+        "z": 0
+      },
+      {
+        "x": 16087.478542410545,
+        "y": 16822,
+        "z": 0
+      },
+      {
+        "x": 16087.478542410545,
+        "y": 17685,
+        "z": 0
+      },
+      {
+        "x": 8029.457219532731,
+        "y": 17685,
+        "z": 0
+      },
+      {
+        "x": 8029.45721953273,
+        "y": 15853.000000000002,
+        "z": 0
+      },
+      {
+        "x": 8029.45721953273,
+        "y": 11530,
+        "z": 0
+      },
+      {
+        "x": 8029.45721953273,
+        "y": 7953.568475486541,
+        "z": 0
+      },
+      {
+        "x": 8761.221234884573,
+        "y": 7953.568475486541,
+        "z": 0
+      },
+      {
+        "x": 8761.221234884573,
+        "y": 5783,
+        "z": 0
+      },
+      {
+        "x": 8761.221234884573,
+        "y": 2483.5000000000005,
+        "z": 0
+      },
+      {
+        "x": 12071.551782875313,
+        "y": 2483.5,
+        "z": 0
+      },
+      {
+        "x": 12071.551782875313,
+        "y": 1327.9365256124722,
+        "z": 0
+      }
+    ]
+  ],
+  "wallList": [
+    {
+      "id": "469fddfd-614f-46d4-8219-e53a8197fe62",
+      "startPoint": {
+        "x": 12207,
+        "y": 1450.9999999999998,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 18044,
+        "y": 1450.9999999999998,
+        "z": 0
+      },
+      "thickness": 246.12694877505567,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      },
+      "leftRight": "center",
+      "wallType": "partition",
+      "material": "default"
+    },
+    {
+      "id": "f8640cfb-4b63-4abd-a2ea-62caf019b20e",
+      "startPoint": {
+        "x": 8885,
+        "y": 2610,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 12207,
+        "y": 2610,
+        "z": 0
+      },
+      "thickness": 253,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "solid",
+      "material": "default"
+    },
+    {
+      "id": "8d6be918-6683-45a3-bb0d-693990d2d45c",
+      "startPoint": {
+        "x": 12207,
+        "y": 5020,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 15420,
+        "y": 5020,
+        "z": 0
+      },
+      "thickness": 184,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": "default"
+    },
+    {
+      "id": "a3da9683-d22f-42bf-9a2b-5ac2cd9de7e1",
+      "startPoint": {
+        "x": 15420,
+        "y": 5680,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 18044,
+        "y": 5680,
+        "z": 0
+      },
+      "thickness": 230,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "solid",
+      "material": "default"
+    },
+    {
+      "id": "b0bbf539-4de1-48e2-9c27-d3b4a98e0dfd",
+      "startPoint": {
+        "x": 8885,
+        "y": 5783,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 12207,
+        "y": 5783,
+        "z": 0
+      },
+      "thickness": 159.83074162679426,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": "default"
+    },
+    {
+      "id": "cc866353-384b-409d-85e7-ef3615d57187",
+      "startPoint": {
+        "x": 8153,
+        "y": 8068,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 12660,
+        "y": 8068,
+        "z": 0
+      },
+      "thickness": 228.86304902692063,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": "default"
+    },
+    {
+      "id": "f7dfffbf-9444-4164-add0-0702f43c53a1",
+      "startPoint": {
+        "x": 12060,
+        "y": 10120,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 12660,
+        "y": 10120,
+        "z": 0
+      },
+      "thickness": 322,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": "default"
+    },
+    {
+      "id": "d13a0251-8a35-4bb5-8b8e-fb7c0bebc724",
+      "startPoint": {
+        "x": 15489,
+        "y": 10642.999999999998,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 19370,
+        "y": 10642.999999999998,
+        "z": 0
+      },
+      "thickness": 253,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": "default"
+    },
+    {
+      "id": "7e8bcad1-60dd-42c3-9c12-0d59d84bf843",
+      "startPoint": {
+        "x": 8153,
+        "y": 11530,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 10620,
+        "y": 11530,
+        "z": 0
+      },
+      "thickness": 161,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": "default"
+    },
+    {
+      "id": "172aea6a-3516-4a19-9c4b-3593a31071d9",
+      "startPoint": {
+        "x": 15947,
+        "y": 13083.000000000002,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 19370,
+        "y": 13083.000000000002,
+        "z": 0
+      },
+      "thickness": 266.25921625544265,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": "default"
+    },
+    {
+      "id": "80d2db5c-8d43-4f51-ae9c-a62a1c99dc11",
+      "startPoint": {
+        "x": 8153,
+        "y": 15853.000000000002,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 15947,
+        "y": 15853.000000000002,
+        "z": 0
+      },
+      "thickness": 252.81801939765185,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": "default"
+    },
+    {
+      "id": "2f942975-ad14-48a7-8bc0-19fddf17b5b8",
+      "startPoint": {
+        "x": 15947,
+        "y": 16707,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 19370,
+        "y": 16707,
+        "z": 0
+      },
+      "thickness": 230,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": "default"
+    },
+    {
+      "id": "9c416533-7ee7-49fc-bc0d-af0721fdc47d",
+      "startPoint": {
+        "x": 8153,
+        "y": 17570,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 15947,
+        "y": 17570,
+        "z": 0
+      },
+      "thickness": 230,
+      "height": 2700,
+      "wallNormal": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "solid",
+      "material": "default"
+    },
+    {
+      "id": "df9665d6-3b05-4620-9d09-fc489514d775",
+      "startPoint": {
+        "x": 8153,
+        "y": 8068,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 8153,
+        "y": 17570,
+        "z": 0
+      },
+      "thickness": 247.0855609345401,
+      "height": 2700,
+      "wallNormal": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": "default"
+    },
+    {
+      "id": "689e4ee7-f54a-4dc6-b17e-f305b6c44e7f",
+      "startPoint": {
+        "x": 8885,
+        "y": 2610,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 8885,
+        "y": 8068,
+        "z": 0
+      },
+      "thickness": 247.55753023085379,
+      "height": 2700,
+      "wallNormal": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": "default"
+    },
+    {
+      "id": "de06599c-4df1-48b1-befc-663bcacb7c58",
+      "startPoint": {
+        "x": 10620,
+        "y": 5783,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 10620,
+        "y": 11530,
+        "z": 0
+      },
+      "thickness": 156.3776466504686,
+      "height": 2700,
+      "wallNormal": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": "default"
+    },
+    {
+      "id": "e8d145ee-eaa0-4050-975b-d2909a644ea8",
+      "startPoint": {
+        "x": 12060,
+        "y": 10120,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 12060,
+        "y": 15853.000000000002,
+        "z": 0
+      },
+      "thickness": 298,
+      "height": 2700,
+      "wallNormal": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": "default"
+    },
+    {
+      "id": "a634dc31-18be-4d97-ab37-34765c8561e8",
+      "startPoint": {
+        "x": 12207,
+        "y": 1450.9999999999998,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 12207,
+        "y": 5783,
+        "z": 0
+      },
+      "thickness": 270.89643424937543,
+      "height": 2700,
+      "wallNormal": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": "default"
+    },
+    {
+      "id": "61c23197-d57a-43d2-b61d-4c7d12a7c3e8",
+      "startPoint": {
+        "x": 12660,
+        "y": 8068,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 12660,
+        "y": 10120,
+        "z": 0
+      },
+      "thickness": 299,
+      "height": 2700,
+      "wallNormal": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": "default"
+    },
+    {
+      "id": "83923a2b-f798-4e98-bb4e-2699cf2f5a9a",
+      "startPoint": {
+        "x": 15355,
+        "y": 1450.9999999999998,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 15420,
+        "y": 5020,
+        "z": 0
+      },
+      "thickness": 138,
+      "height": 2700,
+      "wallNormal": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": "default"
+    },
+    {
+      "id": "89f86f27-ba10-4003-b69d-f4b115dc10f7",
+      "startPoint": {
+        "x": 15420,
+        "y": 5020,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 15420,
+        "y": 5680,
+        "z": 0
+      },
+      "thickness": 184,
+      "height": 2700,
+      "wallNormal": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": "default"
+    },
+    {
+      "id": "0850fbb8-1f7b-4a13-9d40-314a24d1c912",
+      "startPoint": {
+        "x": 15489,
+        "y": 5680,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 15489,
+        "y": 10642.999999999998,
+        "z": 0
+      },
+      "thickness": 230,
+      "height": 2700,
+      "wallNormal": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "solid",
+      "material": "default"
+    },
+    {
+      "id": "9ec9c6b0-d65e-4755-94bd-603465f1158d",
+      "startPoint": {
+        "x": 15947,
+        "y": 13083.000000000002,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 15947,
+        "y": 17570,
+        "z": 0
+      },
+      "thickness": 280.9570848210878,
+      "height": 2700,
+      "wallNormal": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": "default"
+    },
+    {
+      "id": "489f16be-fec4-4b10-bd61-b9c12e5ac67b",
+      "startPoint": {
+        "x": 16918,
+        "y": 10642.999999999998,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 16918,
+        "y": 13083.000000000002,
+        "z": 0
+      },
+      "thickness": 299,
+      "height": 2700,
+      "wallNormal": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": "default"
+    },
+    {
+      "id": "64553937-afbc-4348-9d52-d4d8109c6cf2",
+      "startPoint": {
+        "x": 18044,
+        "y": 1450.9999999999998,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 18044,
+        "y": 5680,
+        "z": 0
+      },
+      "thickness": 230,
+      "height": 2700,
+      "wallNormal": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "solid",
+      "material": "default"
+    },
+    {
+      "id": "ce255562-f613-4f95-ac85-3c5c5e5a94e0",
+      "startPoint": {
+        "x": 19370,
+        "y": 10642.999999999998,
+        "z": 0
+      },
+      "endPoint": {
+        "x": 19370,
+        "y": 16707,
+        "z": 0
+      },
+      "thickness": 230,
+      "height": 2700,
+      "wallNormal": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "leftRight": "left",
+      "wallType": "partition",
+      "material": "default"
+    }
+  ],
+  "roomList": [
+    {
+      "id": "room_10",
+      "name": "客餐厅",
+      "englishName": "客餐厅",
+      "area": 43803276,
+      "points": [
+        {
+          "x": 10698.188823325232,
+          "y": 7953.568475486541,
+          "z": 0
+        },
+        {
+          "x": 10698.188823325232,
+          "y": 5862.915370813396,
+          "z": 0
+        },
+        {
+          "x": 12342.448217124687,
+          "y": 5862.915370813396,
+          "z": 0
+        },
+        {
+          "x": 12342.448217124687,
+          "y": 5112,
+          "z": 0
+        },
+        {
+          "x": 15328.000000000002,
+          "y": 5112,
+          "z": 0
+        },
+        {
+          "x": 15328.000000000002,
+          "y": 5795,
+          "z": 0
+        },
+        {
+          "x": 15374,
+          "y": 5795,
+          "z": 0
+        },
+        {
+          "x": 15374,
+          "y": 10769.499999999998,
+          "z": 0
+        },
+        {
+          "x": 16768.5,
+          "y": 10769.499999999998,
+          "z": 0
+        },
+        {
+          "x": 16768.5,
+          "y": 12949.870391872282,
+          "z": 0
+        },
+        {
+          "x": 15806.521457589457,
+          "y": 12949.870391872282,
+          "z": 0
+        },
+        {
+          "x": 15806.521457589457,
+          "y": 15726.590990301176,
+          "z": 0
+        },
+        {
+          "x": 12209,
+          "y": 15726.590990301176,
+          "z": 0
+        },
+        {
+          "x": 12209,
+          "y": 10281,
+          "z": 0
+        },
+        {
+          "x": 12809.5,
+          "y": 10281,
+          "z": 0
+        },
+        {
+          "x": 12809.5,
+          "y": 7953.568475486541,
+          "z": 0
+        }
+      ],
+      "wallIds": [
+        "cc866353-384b-409d-85e7-ef3615d57187",
+        "de06599c-4df1-48b1-befc-663bcacb7c58",
+        "b0bbf539-4de1-48e2-9c27-d3b4a98e0dfd",
+        "a634dc31-18be-4d97-ab37-34765c8561e8",
+        "8d6be918-6683-45a3-bb0d-693990d2d45c",
+        "89f86f27-ba10-4003-b69d-f4b115dc10f7",
+        "a3da9683-d22f-42bf-9a2b-5ac2cd9de7e1",
+        "0850fbb8-1f7b-4a13-9d40-314a24d1c912",
+        "d13a0251-8a35-4bb5-8b8e-fb7c0bebc724",
+        "489f16be-fec4-4b10-bd61-b9c12e5ac67b",
+        "172aea6a-3516-4a19-9c4b-3593a31071d9",
+        "9ec9c6b0-d65e-4755-94bd-603465f1158d",
+        "80d2db5c-8d43-4f51-ae9c-a62a1c99dc11",
+        "e8d145ee-eaa0-4050-975b-d2909a644ea8",
+        "f7dfffbf-9444-4164-add0-0702f43c53a1",
+        "61c23197-d57a-43d2-b61d-4c7d12a7c3e8"
+      ],
+      "bbox": {
+        "min": {
+          "x": 10698.188823325232,
+          "y": 5112
+        },
+        "max": {
+          "x": 16768.5,
+          "y": 15726.590990301176
+        }
+      }
+    },
+    {
+      "id": "room_9",
+      "name": "主卧",
+      "englishName": "Master Bedroom",
+      "area": 23106441,
+      "points": [
+        {
+          "x": 12510.500000000002,
+          "y": 9959,
+          "z": 0
+        },
+        {
+          "x": 11911,
+          "y": 9959,
+          "z": 0
+        },
+        {
+          "x": 11911,
+          "y": 15726.590990301176,
+          "z": 0
+        },
+        {
+          "x": 8276.54278046727,
+          "y": 15726.590990301176,
+          "z": 0
+        },
+        {
+          "x": 8276.54278046727,
+          "y": 11610.499999999998,
+          "z": 0
+        },
+        {
+          "x": 10698.188823325232,
+          "y": 11610.499999999998,
+          "z": 0
+        },
+        {
+          "x": 10698.188823325232,
+          "y": 8182.43152451346,
+          "z": 0
+        },
+        {
+          "x": 12510.500000000002,
+          "y": 8182.43152451346,
+          "z": 0
+        }
+      ],
+      "wallIds": [
+        "61c23197-d57a-43d2-b61d-4c7d12a7c3e8",
+        "f7dfffbf-9444-4164-add0-0702f43c53a1",
+        "e8d145ee-eaa0-4050-975b-d2909a644ea8",
+        "80d2db5c-8d43-4f51-ae9c-a62a1c99dc11",
+        "df9665d6-3b05-4620-9d09-fc489514d775",
+        "7e8bcad1-60dd-42c3-9c12-0d59d84bf843",
+        "de06599c-4df1-48b1-befc-663bcacb7c58",
+        "cc866353-384b-409d-85e7-ef3615d57187"
+      ],
+      "bbox": {
+        "min": {
+          "x": 8276.54278046727,
+          "y": 8182.43152451346
+        },
+        "max": {
+          "x": 12510.500000000002,
+          "y": 15726.590990301176
+        }
+      }
+    },
+    {
+      "id": "room_8",
+      "name": "阳台",
+      "englishName": "Balcony",
+      "area": 13382298,
+      "points": [
+        {
+          "x": 15806.521457589457,
+          "y": 15979.40900969883,
+          "z": 0
+        },
+        {
+          "x": 15806.521457589457,
+          "y": 17455,
+          "z": 0
+        },
+        {
+          "x": 8276.542780467269,
+          "y": 17455,
+          "z": 0
+        },
+        {
+          "x": 8276.54278046727,
+          "y": 15979.40900969883,
+          "z": 0
+        }
+      ],
+      "wallIds": [
+        "80d2db5c-8d43-4f51-ae9c-a62a1c99dc11",
+        "80d2db5c-8d43-4f51-ae9c-a62a1c99dc11",
+        "9ec9c6b0-d65e-4755-94bd-603465f1158d",
+        "9ec9c6b0-d65e-4755-94bd-603465f1158d",
+        "9c416533-7ee7-49fc-bc0d-af0721fdc47d",
+        "df9665d6-3b05-4620-9d09-fc489514d775"
+      ],
+      "bbox": {
+        "min": {
+          "x": 8276.542780467269,
+          "y": 15979.40900969883
+        },
+        "max": {
+          "x": 15806.521457589457,
+          "y": 17455
+        }
+      }
+    },
+    {
+      "id": "room_7",
+      "name": "次卧",
+      "englishName": "Secondary Bedroom",
+      "area": 12404952,
+      "points": [
+        {
+          "x": 19255,
+          "y": 13216.129608127723,
+          "z": 0
+        },
+        {
+          "x": 19255,
+          "y": 16592,
+          "z": 0
+        },
+        {
+          "x": 16087.478542410545,
+          "y": 16592,
+          "z": 0
+        },
+        {
+          "x": 16087.478542410545,
+          "y": 13216.129608127723,
+          "z": 0
+        }
+      ],
+      "wallIds": [
+        "172aea6a-3516-4a19-9c4b-3593a31071d9",
+        "172aea6a-3516-4a19-9c4b-3593a31071d9",
+        "ce255562-f613-4f95-ac85-3c5c5e5a94e0",
+        "2f942975-ad14-48a7-8bc0-19fddf17b5b8",
+        "9ec9c6b0-d65e-4755-94bd-603465f1158d",
+        "9ec9c6b0-d65e-4755-94bd-603465f1158d"
+      ],
+      "bbox": {
+        "min": {
+          "x": 16087.478542410545,
+          "y": 13216.129608127723
+        },
+        "max": {
+          "x": 19255,
+          "y": 16592
+        }
+      }
+    },
+    {
+      "id": "room_6",
+      "name": "厨房",
+      "englishName": "Kitchen",
+      "area": 11351204.5,
+      "points": [
+        {
+          "x": 15288.229836914888,
+          "y": 1574.0634743875275,
+          "z": 0
+        },
+        {
+          "x": 15349.313018244338,
+          "y": 4928,
+          "z": 0
+        },
+        {
+          "x": 12342.448217124687,
+          "y": 4928,
+          "z": 0
+        },
+        {
+          "x": 12342.448217124687,
+          "y": 1574.0634743875275,
+          "z": 0
+        }
+      ],
+      "wallIds": [
+        "469fddfd-614f-46d4-8219-e53a8197fe62",
+        "83923a2b-f798-4e98-bb4e-2699cf2f5a9a",
+        "8d6be918-6683-45a3-bb0d-693990d2d45c",
+        "a634dc31-18be-4d97-ab37-34765c8561e8",
+        "a634dc31-18be-4d97-ab37-34765c8561e8"
+      ],
+      "bbox": {
+        "min": {
+          "x": 12342.448217124687,
+          "y": 1574.0634743875275
+        },
+        "max": {
+          "x": 15349.313018244338,
+          "y": 4928
+        }
+      }
+    },
+    {
+      "id": "room_5",
+      "name": "书房",
+      "englishName": "Study",
+      "area": 11212888.5,
+      "points": [
+        {
+          "x": 17929,
+          "y": 5565,
+          "z": 0
+        },
+        {
+          "x": 15512,
+          "y": 5565,
+          "z": 0
+        },
+        {
+          "x": 15512,
+          "y": 5020,
+          "z": 0
+        },
+        {
+          "x": 15426.252721692672,
+          "y": 1574.0634743875275,
+          "z": 0
+        },
+        {
+          "x": 17929,
+          "y": 1574.0634743875275,
+          "z": 0
+        }
+      ],
+      "wallIds": [
+        "64553937-afbc-4348-9d52-d4d8109c6cf2",
+        "a3da9683-d22f-42bf-9a2b-5ac2cd9de7e1",
+        "a3da9683-d22f-42bf-9a2b-5ac2cd9de7e1",
+        "89f86f27-ba10-4003-b69d-f4b115dc10f7",
+        "83923a2b-f798-4e98-bb4e-2699cf2f5a9a",
+        "469fddfd-614f-46d4-8219-e53a8197fe62"
+      ],
+      "bbox": {
+        "min": {
+          "x": 15426.252721692672,
+          "y": 1574.0634743875275
+        },
+        "max": {
+          "x": 17929,
+          "y": 5565
+        }
+      }
+    },
+    {
+      "id": "room_4",
+      "name": "次卧2",
+      "englishName": "次卧2",
+      "area": 10540706,
+      "points": [
+        {
+          "x": 12071.551782875313,
+          "y": 2736.5,
+          "z": 0
+        },
+        {
+          "x": 12071.551782875313,
+          "y": 5703.084629186603,
+          "z": 0
+        },
+        {
+          "x": 9008.778765115427,
+          "y": 5703.084629186603,
+          "z": 0
+        },
+        {
+          "x": 9008.778765115427,
+          "y": 2736.5,
+          "z": 0
+        }
+      ],
+      "wallIds": [
+        "f8640cfb-4b63-4abd-a2ea-62caf019b20e",
+        "a634dc31-18be-4d97-ab37-34765c8561e8",
+        "a634dc31-18be-4d97-ab37-34765c8561e8",
+        "b0bbf539-4de1-48e2-9c27-d3b4a98e0dfd",
+        "b0bbf539-4de1-48e2-9c27-d3b4a98e0dfd",
+        "689e4ee7-f54a-4dc6-b17e-f305b6c44e7f"
+      ],
+      "bbox": {
+        "min": {
+          "x": 9008.778765115427,
+          "y": 2736.5
+        },
+        "max": {
+          "x": 12071.551782875313,
+          "y": 5703.084629186603
+        }
+      }
+    },
+    {
+      "id": "room_3",
+      "name": "卫生间2",
+      "englishName": "卫生间2",
+      "area": 8540754,
+      "points": [
+        {
+          "x": 10541.811176674766,
+          "y": 8182.43152451346,
+          "z": 0
+        },
+        {
+          "x": 10541.811176674766,
+          "y": 11449.5,
+          "z": 0
+        },
+        {
+          "x": 8276.54278046727,
+          "y": 11449.5,
+          "z": 0
+        },
+        {
+          "x": 8276.54278046727,
+          "y": 8182.43152451346,
+          "z": 0
+        }
+      ],
+      "wallIds": [
+        "cc866353-384b-409d-85e7-ef3615d57187",
+        "cc866353-384b-409d-85e7-ef3615d57187",
+        "de06599c-4df1-48b1-befc-663bcacb7c58",
+        "7e8bcad1-60dd-42c3-9c12-0d59d84bf843",
+        "df9665d6-3b05-4620-9d09-fc489514d775"
+      ],
+      "bbox": {
+        "min": {
+          "x": 8276.54278046727,
+          "y": 8182.43152451346
+        },
+        "max": {
+          "x": 10541.811176674766,
+          "y": 11449.5
+        }
+      }
+    },
+    {
+      "id": "room_2",
+      "name": "卫生间",
+      "englishName": "Bathroom",
+      "area": 5982880,
+      "points": [
+        {
+          "x": 19255,
+          "y": 12949.870391872282,
+          "z": 0
+        },
+        {
+          "x": 17067.5,
+          "y": 12949.870391872282,
+          "z": 0
+        },
+        {
+          "x": 17067.5,
+          "y": 10769.499999999998,
+          "z": 0
+        },
+        {
+          "x": 19255,
+          "y": 10769.499999999998,
+          "z": 0
+        }
+      ],
+      "wallIds": [
+        "ce255562-f613-4f95-ac85-3c5c5e5a94e0",
+        "172aea6a-3516-4a19-9c4b-3593a31071d9",
+        "489f16be-fec4-4b10-bd61-b9c12e5ac67b",
+        "d13a0251-8a35-4bb5-8b8e-fb7c0bebc724"
+      ],
+      "bbox": {
+        "min": {
+          "x": 17067.5,
+          "y": 10769.499999999998
+        },
+        "max": {
+          "x": 19255,
+          "y": 12949.870391872282
+        }
+      }
+    },
+    {
+      "id": "room_1",
+      "name": "卫生间3",
+      "englishName": "卫生间3",
+      "area": 3964475,
+      "points": [
+        {
+          "x": 9008.778765115427,
+          "y": 5862.915370813396,
+          "z": 0
+        },
+        {
+          "x": 10541.811176674766,
+          "y": 5862.915370813396,
+          "z": 0
+        },
+        {
+          "x": 10541.811176674766,
+          "y": 7953.568475486541,
+          "z": 0
+        },
+        {
+          "x": 9008.778765115427,
+          "y": 7953.568475486541,
+          "z": 0
+        }
+      ],
+      "wallIds": [
+        "689e4ee7-f54a-4dc6-b17e-f305b6c44e7f",
+        "b0bbf539-4de1-48e2-9c27-d3b4a98e0dfd",
+        "de06599c-4df1-48b1-befc-663bcacb7c58",
+        "cc866353-384b-409d-85e7-ef3615d57187"
+      ],
+      "bbox": {
+        "min": {
+          "x": 9008.778765115427,
+          "y": 5862.915370813396
+        },
+        "max": {
+          "x": 10541.811176674766,
+          "y": 7953.568475486541
+        }
+      }
+    }
+  ],
+  "doorList": [
+    {
+      "id": "12f607ca08cb4f1ca9f3d697375d73f5",
+      "type": "OT_Door",
+      "pos": {
+        "x": 11347,
+        "y": 8068,
+        "z": 0
+      },
+      "direction": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "length": 790,
+      "height": 2200,
+      "width": 228.86304902692063,
+      "wallId": "cc866353-384b-409d-85e7-ef3615d57187",
+      "side": "left",
+      "facing": "inner"
+    },
+    {
+      "id": "0241dc9b42a04446a01a8dd8ca9eee4f",
+      "type": "OT_Door",
+      "pos": {
+        "x": 16441.238900003955,
+        "y": 13083.000000000002,
+        "z": 0
+      },
+      "direction": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "length": 640,
+      "height": 2200,
+      "width": 266.25921625544265,
+      "wallId": "172aea6a-3516-4a19-9c4b-3593a31071d9",
+      "side": "left",
+      "facing": "inner"
+    },
+    {
+      "id": "ed67285dd2f6485484e12aa313153b56",
+      "type": "OT_Door",
+      "pos": {
+        "x": 16918,
+        "y": 12504.37967128256,
+        "z": 0
+      },
+      "direction": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "length": 690,
+      "height": 2200,
+      "width": 299,
+      "wallId": "489f16be-fec4-4b10-bd61-b9c12e5ac67b",
+      "side": "left",
+      "facing": "inner"
+    },
+    {
+      "id": "0347c6e785cc4ca79d3ff5557177d5b2",
+      "type": "OT_Door",
+      "pos": {
+        "x": 11592.999999999998,
+        "y": 5783,
+        "z": 0
+      },
+      "direction": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      },
+      "length": 790,
+      "height": 2200,
+      "width": 159.83074162679426,
+      "wallId": "b0bbf539-4de1-48e2-9c27-d3b4a98e0dfd",
+      "side": "left",
+      "facing": "inner"
+    },
+    {
+      "id": "3842d8791f5f45cf91dfa5229b69682a",
+      "type": "OT_Door",
+      "pos": {
+        "x": 15420,
+        "y": 5003.62749679304,
+        "z": 0
+      },
+      "direction": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "length": 790,
+      "height": 2200,
+      "width": 184,
+      "wallId": "89f86f27-ba10-4003-b69d-f4b115dc10f7",
+      "side": "left",
+      "facing": "inner"
+    },
+    {
+      "id": "90442d4cf9a34dab86e05bdf2f3b5513",
+      "type": "OT_Door",
+      "pos": {
+        "x": 10620,
+        "y": 6485,
+        "z": 0
+      },
+      "direction": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "length": 790,
+      "height": 2200,
+      "width": 156.3776466504686,
+      "wallId": "de06599c-4df1-48b1-befc-663bcacb7c58",
+      "side": "left",
+      "facing": "inner"
+    },
+    {
+      "id": "008214b66c254d8b8587f09cea932616",
+      "type": "OT_Door",
+      "pos": {
+        "x": 10620,
+        "y": 8840,
+        "z": 0
+      },
+      "direction": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "length": 690,
+      "height": 2200,
+      "width": 156.3776466504686,
+      "wallId": "de06599c-4df1-48b1-befc-663bcacb7c58",
+      "side": "left",
+      "facing": "inner"
+    },
+    {
+      "id": "71b5a0dd73f94ce092d9ae6b8942581a",
+      "type": "OT_Door",
+      "pos": {
+        "x": 15489,
+        "y": 8590.18788397663,
+        "z": 0
+      },
+      "direction": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "length": 1540,
+      "height": 2100,
+      "width": 230,
+      "wallId": "0850fbb8-1f7b-4a13-9d40-314a24d1c912",
+      "side": "left",
+      "facing": "inner"
+    },
+    {
+      "id": "aab9f7fbaac6483e9e5a0e9218fbcd23",
+      "type": "OT_SlidingDoor",
+      "pos": {
+        "x": 13876.186075476593,
+        "y": 15853.000000000002,
+        "z": 0
+      },
+      "direction": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      },
+      "length": 1500,
+      "height": 2200,
+      "width": 252.81801939765185,
+      "wallId": "80d2db5c-8d43-4f51-ae9c-a62a1c99dc11",
+      "side": "left",
+      "facing": "inner"
+    },
+    {
+      "id": "164891b8d85f4538a3d1c3413e6225e0",
+      "type": "OT_SlidingDoor",
+      "pos": {
+        "x": 10002.326554287383,
+        "y": 15853.000000000002,
+        "z": 0
+      },
+      "direction": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      },
+      "length": 1550,
+      "height": 2200,
+      "width": 252.81801939765185,
+      "wallId": "80d2db5c-8d43-4f51-ae9c-a62a1c99dc11",
+      "side": "left",
+      "facing": "inner"
+    },
+    {
+      "id": "4d8130d528394d6ba6125c5cdc0e9bd1",
+      "type": "OT_SlidingDoor",
+      "pos": {
+        "x": 13727,
+        "y": 5020,
+        "z": 0
+      },
+      "direction": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "length": 1500,
+      "height": 2200,
+      "width": 184,
+      "wallId": "8d6be918-6683-45a3-bb0d-693990d2d45c",
+      "side": "left",
+      "facing": "inner"
+    }
+  ],
+  "windowList": [
+    {
+      "id": "6c0221d5a93a4abe908fafb7b764fc65",
+      "windowType": "OT_Ground_Window",
+      "pos": {
+        "x": 12082.999999999998,
+        "y": 17570,
+        "z": 0
+      },
+      "direction": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "length": 747,
+      "height": 2300,
+      "width": 230,
+      "heightToFloor": 100,
+      "wallId": "9c416533-7ee7-49fc-bc0d-af0721fdc47d",
+      "side": "center",
+      "isFlipped": false
+    },
+    {
+      "id": "756e1c8a37c74903b9c188c72812c9b6",
+      "windowType": "OT_Window",
+      "pos": {
+        "x": 19370,
+        "y": 11692,
+        "z": 0
+      },
+      "direction": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      },
+      "length": 850,
+      "height": 1500,
+      "width": 230,
+      "heightToFloor": 900,
+      "wallId": "ce255562-f613-4f95-ac85-3c5c5e5a94e0",
+      "side": "center",
+      "isFlipped": false
+    },
+    {
+      "id": "94930d44b960402e92f689c3b87f2fdf",
+      "windowType": "OT_Window",
+      "pos": {
+        "x": 8589.596169096565,
+        "y": 8068,
+        "z": 0
+      },
+      "direction": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "length": 520,
+      "height": 1500,
+      "width": 228.86304902692063,
+      "heightToFloor": 900,
+      "wallId": "cc866353-384b-409d-85e7-ef3615d57187",
+      "side": "center",
+      "isFlipped": false
+    },
+    {
+      "id": "0a169148b7a5409296209fe579281bfb",
+      "windowType": "OT_Window",
+      "pos": {
+        "x": 8885,
+        "y": 6401.824770176614,
+        "z": 0
+      },
+      "direction": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      },
+      "length": 850,
+      "height": 1500,
+      "width": 247.55753023085379,
+      "heightToFloor": 900,
+      "wallId": "689e4ee7-f54a-4dc6-b17e-f305b6c44e7f",
+      "side": "center",
+      "isFlipped": false
+    },
+    {
+      "id": "c82b2641dc1341d2aa1860fb2330ab39",
+      "windowType": "OT_Window",
+      "pos": {
+        "x": 10967.999999999998,
+        "y": 2610,
+        "z": 0
+      },
+      "direction": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "length": 1470,
+      "height": 1500,
+      "width": 253,
+      "heightToFloor": 900,
+      "wallId": "f8640cfb-4b63-4abd-a2ea-62caf019b20e",
+      "side": "center",
+      "isFlipped": false
+    },
+    {
+      "id": "31ed1b0882b04a689cb79386971fbd99",
+      "windowType": "OT_Window",
+      "pos": {
+        "x": 16536.870510607776,
+        "y": 1450.9999999999998,
+        "z": 0
+      },
+      "direction": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "length": 1470,
+      "height": 1500,
+      "width": 246.12694877505567,
+      "heightToFloor": 900,
+      "wallId": "469fddfd-614f-46d4-8219-e53a8197fe62",
+      "side": "center",
+      "isFlipped": false
+    },
+    {
+      "id": "eee9d5670df849c8878284a8f0d36152",
+      "windowType": "OT_Window",
+      "pos": {
+        "x": 13900.66524875855,
+        "y": 1450.9999999999998,
+        "z": 0
+      },
+      "direction": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "length": 1440,
+      "height": 1500,
+      "width": 246.12694877505567,
+      "heightToFloor": 900,
+      "wallId": "469fddfd-614f-46d4-8219-e53a8197fe62",
+      "side": "center",
+      "isFlipped": false
+    },
+    {
+      "id": "2cd831bad7b845f0b807083b83e0ee7a",
+      "windowType": "OT_RectBayWindow",
+      "pos": {
+        "x": 17509.43524762935,
+        "y": 16707,
+        "z": 0
+      },
+      "direction": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "length": 1954.4270324707031,
+      "height": 1950,
+      "width": 230,
+      "heightToFloor": 450,
+      "wallId": "2f942975-ad14-48a7-8bc0-19fddf17b5b8",
+      "side": "center",
+      "isFlipped": false
+    }
+  ],
+  "beamList": [],
+  "columnList": []
+}

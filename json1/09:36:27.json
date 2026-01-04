@@ -2,13 +2,13 @@
     "version": "1.0",
     "unit": "mm",
     "centerPos": {
-        "x": 10586.95652173913,
-        "y": 12065.217391304346,
+        "x": 10418.275862068964,
+        "y": 12698.620689655172,
         "z": 0
     },
     "floorHeight": 2700,
     "wallHeight": 2700,
-    "totalArea": 244000000,
+    "totalArea": 151760000,
     "outerPoints": [
         [
             {
@@ -38,16 +38,26 @@
             },
             {
                 "x": 20120,
-                "y": 15000,
+                "y": 15001.211997564084,
                 "z": 0
             },
             {
-                "x": 20120,
-                "y": 18120,
+                "x": 20059.96419057587,
+                "y": 17972.98456405853,
                 "z": 0
             },
             {
-                "x": 18000,
+                "x": 19996.505606262326,
+                "y": 20120,
+                "z": 0
+            },
+            {
+                "x": 17880,
+                "y": 20120,
+                "z": 0
+            },
+            {
+                "x": 17880,
                 "y": 18120,
                 "z": 0
             },
@@ -586,13 +596,139 @@
             "leftRight": "left",
             "wallType": "partition",
             "material": ""
+        },
+        {
+            "id": "master_bathroom_wall_3",
+            "startPoint": {
+                "x": 3880,
+                "y": 6880
+            },
+            "endPoint": {
+                "x": 5120,
+                "y": 6880
+            },
+            "thickness": 240,
+            "height": 2700,
+            "wallNormal": {
+                "x": 0,
+                "y": -1,
+                "z": 0
+            },
+            "leftRight": "left",
+            "wallType": "partition",
+            "material": ""
+        },
+        {
+            "id": "master_bathroom_wall_4",
+            "startPoint": {
+                "x": 5120,
+                "y": 6880
+            },
+            "endPoint": {
+                "x": 5120,
+                "y": 5120
+            },
+            "thickness": 240,
+            "height": 2700,
+            "wallNormal": {
+                "x": -1,
+                "y": 0,
+                "z": 0
+            },
+            "leftRight": "left",
+            "wallType": "partition",
+            "material": ""
+        },
+        {
+            "id": "master_balcony_wall_2",
+            "startPoint": {
+                "x": 6880,
+                "y": 17880
+            },
+            "endPoint": {
+                "x": 6880,
+                "y": 20000
+            },
+            "thickness": 240,
+            "height": 2700,
+            "wallNormal": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "leftRight": "left",
+            "wallType": "partition",
+            "material": ""
+        },
+        {
+            "id": "master_balcony_wall_3",
+            "startPoint": {
+                "x": 6880,
+                "y": 20000
+            },
+            "endPoint": {
+                "x": 2620,
+                "y": 20000
+            },
+            "thickness": 240,
+            "height": 2700,
+            "wallNormal": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "leftRight": "left",
+            "wallType": "partition",
+            "material": ""
+        },
+        {
+            "id": "living_balcony_wall_1",
+            "startPoint": {
+                "x": 19880,
+                "y": 17880
+            },
+            "endPoint": {
+                "x": 19880,
+                "y": 20000
+            },
+            "thickness": 240,
+            "height": 2700,
+            "wallNormal": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "leftRight": "left",
+            "wallType": "partition",
+            "material": ""
+        },
+        {
+            "id": "living_balcony_wall_2",
+            "startPoint": {
+                "x": 19880,
+                "y": 20000
+            },
+            "endPoint": {
+                "x": 15120,
+                "y": 20000
+            },
+            "thickness": 240,
+            "height": 2700,
+            "wallNormal": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "leftRight": "left",
+            "wallType": "partition",
+            "material": ""
         }
     ],
     "roomList": [
         {
-            "id": "room_4",
+            "id": "room_5",
             "name": "客厅",
-            "englishName": "房间D",
+            "englishName": "Living Room",
             "area": 135000000,
             "points": [
                 {
@@ -739,6 +875,9 @@
                 "outer_wall_15",
                 "outer_wall_4",
                 "outer_wall_5",
+                "living_balcony_wall_1",
+                "living_balcony_wall_1",
+                "outer_wall_5",
                 "outer_wall_11",
                 "outer_wall_11",
                 "outer_wall_5",
@@ -766,111 +905,8 @@
         },
         {
             "id": "room_3",
-            "name": "主卧",
-            "englishName": "房间C",
-            "area": 96000000,
-            "points": [
-                {
-                    "x": 6880,
-                    "y": 15120,
-                    "z": 0
-                },
-                {
-                    "x": 6880,
-                    "y": 24880,
-                    "z": 0
-                },
-                {
-                    "x": 2620,
-                    "y": 24880,
-                    "z": 0
-                },
-                {
-                    "x": 2620,
-                    "y": 7120,
-                    "z": 0
-                },
-                {
-                    "x": 4120,
-                    "y": 7120,
-                    "z": 0
-                },
-                {
-                    "x": 4120,
-                    "y": 5120,
-                    "z": 0
-                },
-                {
-                    "x": 6880,
-                    "y": 5120,
-                    "z": 0
-                },
-                {
-                    "x": 6880,
-                    "y": 10120,
-                    "z": 0
-                },
-                {
-                    "x": 9880,
-                    "y": 10120,
-                    "z": 0
-                },
-                {
-                    "x": 9880,
-                    "y": 12880,
-                    "z": 0
-                },
-                {
-                    "x": 6880,
-                    "y": 12880,
-                    "z": 0
-                },
-                {
-                    "x": 6880,
-                    "y": 14880,
-                    "z": 0
-                },
-                {
-                    "x": 5000,
-                    "y": 14880,
-                    "z": 0
-                },
-                {
-                    "x": 5000,
-                    "y": 15120,
-                    "z": 0
-                }
-            ],
-            "wallIds": [
-                "inner_wall_2",
-                "outer_wall_8",
-                "outer_wall_9",
-                "outer_wall_10",
-                "master_bathroom_wall_1",
-                "master_bathroom_wall_2",
-                "master_bedroom_wall_1",
-                "master_bedroom_wall_2",
-                "master_balcony_wall_1",
-                "inner_wall_dining_living_1_m",
-                "outer_wall_7",
-                "outer_wall_8",
-                "inner_wall_2"
-            ],
-            "bbox": {
-                "min": {
-                    "x": 2620,
-                    "y": 5120
-                },
-                "max": {
-                    "x": 9880,
-                    "y": 24880
-                }
-            }
-        },
-        {
-            "id": "room_2",
             "name": "厨房",
-            "englishName": "房间B",
+            "englishName": "Kitchen",
             "area": 10000000,
             "points": [
                 {
@@ -912,9 +948,53 @@
             }
         },
         {
+            "id": "room_2",
+            "name": "房间A",
+            "englishName": "房间A",
+            "area": 3760000,
+            "points": [
+                {
+                    "x": 18120,
+                    "y": 19880,
+                    "z": 0
+                },
+                {
+                    "x": 18120,
+                    "y": 18120,
+                    "z": 0
+                },
+                {
+                    "x": 19760,
+                    "y": 18120,
+                    "z": 0
+                },
+                {
+                    "x": 19760,
+                    "y": 19880,
+                    "z": 0
+                }
+            ],
+            "wallIds": [
+                "living_balcony_wall_2",
+                "outer_wall_11",
+                "outer_wall_5",
+                "living_balcony_wall_1"
+            ],
+            "bbox": {
+                "min": {
+                    "x": 18120,
+                    "y": 18120
+                },
+                "max": {
+                    "x": 19760,
+                    "y": 19880
+                }
+            }
+        },
+        {
             "id": "room_1",
             "name": "次卧",
-            "englishName": "房间A",
+            "englishName": "Secondary Bedroom",
             "area": 3000000,
             "points": [
                 {
@@ -942,6 +1022,9 @@
                 "master_bathroom_wall_1",
                 "outer_wall_10",
                 "master_bedroom_wall_1",
+                "master_bathroom_wall_2",
+                "master_bathroom_wall_3",
+                "master_bathroom_wall_3",
                 "master_bathroom_wall_2"
             ],
             "bbox": {

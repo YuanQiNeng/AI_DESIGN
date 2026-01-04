@@ -27,6 +27,7 @@ from export_house_type import complete_floor_plan
 from process_json import process_house_json,format_report
 from datetime import datetime
 import subprocess
+from typing import *
 def get_time() ->str:
     now = datetime.now()
     return now.strftime("%H:%M:%S")
@@ -47,6 +48,22 @@ class Wall(BaseModel):
 class tool_runtime:
     image_url:str
     house_type_json:dict
+    plan:Optional[list[str]]=None
+    design_state:Optional[str]=None
+    current_task:Optional[str]=None
+    completed_task:Optional[str]=None
+@tool()
+def add_plan(plan:list[str],design_state:str,runtime:ToolRuntime[tool_runtime]):
+    """
+    为当前的绘制户型的设计规划步骤任务以及规划整体的细节布局
+    Args:
+        plan (list[str]): 添加的设计计划
+        design_state:str:整体的户型设计布局,尽量详细一些,尤其是对于外轮廓的设计以及房间的布局,一定要说清楚
+    """
+    runtime.context.plan=plan
+    runtime.context.design_state=design_state
+    logger.info(f"\n\n添加的设计计划为:{plan}\n\n添加的设计布局为:{design_state}\n\n")
+    return f"规划成功"
 @tool()
 def get_current_house_type_json(runtime:ToolRuntime[tool_runtime]):
     """
@@ -57,16 +74,18 @@ def get_current_house_type_json(runtime:ToolRuntime[tool_runtime]):
     return ToolMessage(content=[{'type':'text','text':f'这是当前的户型json:\n{runtime.context.house_type_json}\n这是对应的户型图\n'},
                                 {'type':'image','url':runtime.context.image_url}],tool_call_id=str(uuid4()))
 @tool()
-def Name_romm(names:list[str],room_ids:list[str],runtime:ToolRuntime[tool_runtime]):
+def Name_romm(names:list[str],completed_task:str,room_ids:list[str],runtime:ToolRuntime[tool_runtime]):
     """
     为房间命名
     Args:
-        names (list[str]): 若干个房间的名称
-        room_ids (list[str]): 若干个房间的id
+        names (list[str]): 若干个要命名的房间的名称
+        room_ids (list[str]): 若干个要命名房间的id
+        completed_task (str): 命名完当前的房间后完成的最新任务
     Returns:
         返回的户型json中房间的数据信息
     """
     data_json:dict=runtime.context.house_type_json
+    runtime.context.completed_task=completed_task
     room_list:list[dict]=data_json['roomList']
     for i,r in enumerate(room_list):
         if r['id'] in room_ids:
@@ -94,9 +113,9 @@ def Name_romm(names:list[str],room_ids:list[str],runtime:ToolRuntime[tool_runtim
                        tool_call_id=str(uuid4()))
 
 @tool()
-def draw_wall(walls:list[Wall],delete_walls:list[str],runtime:ToolRuntime[tool_runtime]):
+def draw_wall(walls:list[Wall],task:str,delete_walls:list[str],runtime:ToolRuntime[tool_runtime]):
     """绘制/更新/删除墙体,并且会把重叠多余的墙体进行合并实现户型json的后处理清洗
-    Args:
+    Args:  
         walls (list[dict]): 需要绘制/更新的墙体信息,dict的结构如下:
             "id":str 墙体的id,
             "startPoint":dict 墙体的起始点,是一个python字典,包含x,y,z三个键值对,分别表示起始点的x,y,z坐标,
@@ -105,10 +124,12 @@ def draw_wall(walls:list[Wall],delete_walls:list[str],runtime:ToolRuntime[tool_r
             "height":float 墙体的高度,默认是1000,
             "wallType":str Literal['solid','partition']=Field(description="墙体的类型,默认是非承重墙",default="partition"),
             "material":str Literal['',"钢架结构",'轻质砖','混凝土','红砖','木龙骨石膏板','轻钢龙骨石膏板','轻钢龙骨水泥板','硅钙板','钢筋混凝土']=Field(description="墙体的材料,默认是空字符串",default=""),
-        delete_wall (list[str]): 需要删除的墙体id
+        task (str): 当前绘制墙体对应的任务
+        delete_walls (list[str]): 需要删除的墙体id
     Returns:
         Tuple[dict,str]: 更新后处理后的户型json数据,处理报告
     """
+    runtime.context.current_task=task
     data_json:dict=runtime.context.house_type_json
     wall_list:list[dict]=data_json['wallList']
     walls=[w.model_dump() for w in walls]
@@ -133,8 +154,7 @@ def draw_wall(walls:list[Wall],delete_walls:list[str],runtime:ToolRuntime[tool_r
     path='/app/AI_Design/AI_Design/test1.json'
     now=f"/app/AI_Design/AI_Design/json1/{get_time()}.json"
     wall_list=data_json['wallList']
-    data_json=complete_floor_plan(wall_list, [], [], [], [])
-    Time.sleep(1.0)
+    data_json=complete_floor_plan(wall_list, [], [], [], [],data_json['roomList'])
     if not data_json:
         logger.error("调用API导出完整户型失败")
         subprocess.run(

@@ -2,15 +2,20 @@
     "version": "1.0",
     "unit": "mm",
     "centerPos": {
-        "x": 10586.95652173913,
-        "y": 12065.217391304346,
+        "x": 8627.941176470587,
+        "y": 11171.176470588234,
         "z": 0
     },
     "floorHeight": 2700,
     "wallHeight": 2700,
-    "totalArea": 244000000,
+    "totalArea": 194000000,
     "outerPoints": [
         [
+            {
+                "x": 3200,
+                "y": 2880,
+                "z": 0
+            },
             {
                 "x": 15120,
                 "y": 2880,
@@ -73,6 +78,11 @@
             },
             {
                 "x": 7120,
+                "y": 14000,
+                "z": 0
+            },
+            {
+                "x": 7120,
                 "y": 15000,
                 "z": 0
             },
@@ -88,12 +98,22 @@
             },
             {
                 "x": 2380,
+                "y": 9000,
+                "z": 0
+            },
+            {
+                "x": 2380,
                 "y": 7000,
                 "z": 0
             },
             {
                 "x": 2380,
                 "y": 5000,
+                "z": 0
+            },
+            {
+                "x": 2380,
+                "y": 4000,
                 "z": 0
             },
             {
@@ -548,12 +568,33 @@
         {
             "id": "master_balcony_wall_1",
             "startPoint": {
-                "x": 7000,
-                "y": 10000
+                "x": 1200,
+                "y": 4000
             },
             "endPoint": {
-                "x": 10000,
-                "y": 10000
+                "x": 3200,
+                "y": 4000
+            },
+            "thickness": 240,
+            "height": 2700,
+            "wallNormal": {
+                "x": 0,
+                "y": -1,
+                "z": 0
+            },
+            "leftRight": "left",
+            "wallType": "solid",
+            "material": ""
+        },
+        {
+            "id": "master_bathroom_wall_3",
+            "startPoint": {
+                "x": 3880,
+                "y": 6880
+            },
+            "endPoint": {
+                "x": 5120,
+                "y": 6880
             },
             "thickness": 240,
             "height": 2700,
@@ -564,13 +605,223 @@
             },
             "leftRight": "left",
             "wallType": "partition",
-            "material": "轻质砖"
+            "material": ""
         },
         {
-            "id": "inner_wall_dining_living_1_m",
+            "id": "master_bathroom_wall_4",
+            "startPoint": {
+                "x": 5120,
+                "y": 6880
+            },
+            "endPoint": {
+                "x": 5120,
+                "y": 5120
+            },
+            "thickness": 240,
+            "height": 2700,
+            "wallNormal": {
+                "x": -1,
+                "y": 0,
+                "z": 0
+            },
+            "leftRight": "left",
+            "wallType": "partition",
+            "material": ""
+        },
+        {
+            "id": "master_balcony_wall_2",
+            "startPoint": {
+                "x": 6880,
+                "y": 17880
+            },
+            "endPoint": {
+                "x": 6880,
+                "y": 20000
+            },
+            "thickness": 240,
+            "height": 2700,
+            "wallNormal": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "leftRight": "left",
+            "wallType": "partition",
+            "material": ""
+        },
+        {
+            "id": "master_balcony_wall_3",
+            "startPoint": {
+                "x": 6880,
+                "y": 20000
+            },
+            "endPoint": {
+                "x": 2620,
+                "y": 20000
+            },
+            "thickness": 240,
+            "height": 2700,
+            "wallNormal": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "leftRight": "left",
+            "wallType": "partition",
+            "material": ""
+        },
+        {
+            "id": "living_balcony_wall_1",
+            "startPoint": {
+                "x": 8000,
+                "y": 6000
+            },
+            "endPoint": {
+                "x": 10000,
+                "y": 6000
+            },
+            "thickness": 240,
+            "height": 2700,
+            "wallNormal": {
+                "x": 0,
+                "y": -1,
+                "z": 0
+            },
+            "leftRight": "left",
+            "wallType": "solid",
+            "material": ""
+        },
+        {
+            "id": "master_wall_1",
+            "startPoint": {
+                "x": 1500,
+                "y": 9000
+            },
+            "endPoint": {
+                "x": 6500,
+                "y": 9000
+            },
+            "thickness": 240,
+            "height": 2700,
+            "wallNormal": {
+                "x": 0,
+                "y": -1,
+                "z": 0
+            },
+            "leftRight": "left",
+            "wallType": "solid",
+            "material": ""
+        },
+        {
+            "id": "master_wall_2",
+            "startPoint": {
+                "x": 6500,
+                "y": 9000
+            },
+            "endPoint": {
+                "x": 6500,
+                "y": 14000
+            },
+            "thickness": 240,
+            "height": 2700,
+            "wallNormal": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "leftRight": "left",
+            "wallType": "solid",
+            "material": ""
+        },
+        {
+            "id": "master_bath_wall",
+            "startPoint": {
+                "x": 3000,
+                "y": 9000
+            },
+            "endPoint": {
+                "x": 3000,
+                "y": 14000
+            },
+            "thickness": 240,
+            "height": 2700,
+            "wallNormal": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "leftRight": "left",
+            "wallType": "partition",
+            "material": ""
+        },
+        {
+            "id": "master_closure_wall",
+            "startPoint": {
+                "x": 3000,
+                "y": 14000
+            },
+            "endPoint": {
+                "x": 11000,
+                "y": 14000
+            },
+            "thickness": 240,
+            "height": 2700,
+            "wallNormal": {
+                "x": 0,
+                "y": -1,
+                "z": 0
+            },
+            "leftRight": "left",
+            "wallType": "partition",
+            "material": ""
+        },
+        {
+            "id": "master_bath_wall_1",
+            "startPoint": {
+                "x": 1200,
+                "y": 2000
+            },
+            "endPoint": {
+                "x": 3200,
+                "y": 2000
+            },
+            "thickness": 240,
+            "height": 2700,
+            "wallNormal": {
+                "x": 0,
+                "y": -1,
+                "z": 0
+            },
+            "leftRight": "left",
+            "wallType": "solid",
+            "material": ""
+        },
+        {
+            "id": "master_bath_wall_2",
+            "startPoint": {
+                "x": 3200,
+                "y": 2000
+            },
+            "endPoint": {
+                "x": 3200,
+                "y": 4000
+            },
+            "thickness": 240,
+            "height": 2700,
+            "wallNormal": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "leftRight": "left",
+            "wallType": "solid",
+            "material": ""
+        },
+        {
+            "id": "inner_wall_dining_living_1_m_m",
             "startPoint": {
                 "x": 10000,
-                "y": 7000
+                "y": 6000
             },
             "endPoint": {
                 "x": 10000,
@@ -590,144 +841,243 @@
     ],
     "roomList": [
         {
-            "id": "room_4",
+            "id": "room_7",
             "name": "客厅",
-            "englishName": "房间D",
-            "area": 135000000,
+            "englishName": "Living Room",
+            "area": 160800000,
             "points": [
                 {
                     "x": 14880,
+                    "y": 4880,
+                    "z": 0
+                },
+                {
+                    "x": 10000,
+                    "y": 4880,
+                    "z": 0
+                },
+                {
+                    "x": 10000,
+                    "y": 5120,
+                    "z": 0
+                },
+                {
+                    "x": 14880,
+                    "y": 5120,
+                    "z": 0
+                },
+                {
+                    "x": 14880,
+                    "y": 10120,
+                    "z": 0
+                },
+                {
+                    "x": 19880,
+                    "y": 10120,
+                    "z": 0
+                },
+                {
+                    "x": 19880,
+                    "y": 14880,
+                    "z": 0
+                },
+                {
+                    "x": 15000,
+                    "y": 14880,
+                    "z": 0
+                },
+                {
+                    "x": 15000,
+                    "y": 15120,
+                    "z": 0
+                },
+                {
+                    "x": 19880,
+                    "y": 15120,
+                    "z": 0
+                },
+                {
+                    "x": 19880,
+                    "y": 17880,
+                    "z": 0
+                },
+                {
+                    "x": 18120,
+                    "y": 17880,
+                    "z": 0
+                },
+                {
+                    "x": 18120,
+                    "y": 16000,
+                    "z": 0
+                },
+                {
+                    "x": 17880,
+                    "y": 16000,
+                    "z": 0
+                },
+                {
+                    "x": 17880,
+                    "y": 17880,
+                    "z": 0
+                },
+                {
+                    "x": 12120,
+                    "y": 17880,
+                    "z": 0
+                },
+                {
+                    "x": 12120,
+                    "y": 12880,
+                    "z": 0
+                },
+                {
+                    "x": 10120,
+                    "y": 12880,
+                    "z": 0
+                },
+                {
+                    "x": 10120,
+                    "y": 5880,
+                    "z": 0
+                },
+                {
+                    "x": 8000,
+                    "y": 5880,
+                    "z": 0
+                },
+                {
+                    "x": 8000,
+                    "y": 6120,
+                    "z": 0
+                },
+                {
+                    "x": 9880,
+                    "y": 6120,
+                    "z": 0
+                },
+                {
+                    "x": 9880,
+                    "y": 12880,
+                    "z": 0
+                },
+                {
+                    "x": 6880,
+                    "y": 12880,
+                    "z": 0
+                },
+                {
+                    "x": 6880,
+                    "y": 13880,
+                    "z": 0
+                },
+                {
+                    "x": 6620,
+                    "y": 13880,
+                    "z": 0
+                },
+                {
+                    "x": 6620,
+                    "y": 8880,
+                    "z": 0
+                },
+                {
+                    "x": 2620,
+                    "y": 8880,
+                    "z": 0
+                },
+                {
+                    "x": 2620,
+                    "y": 7120,
+                    "z": 0
+                },
+                {
+                    "x": 4120,
+                    "y": 7120,
+                    "z": 0
+                },
+                {
+                    "x": 4120,
+                    "y": 7000,
+                    "z": 0
+                },
+                {
+                    "x": 5240,
+                    "y": 7000,
+                    "z": 0
+                },
+                {
+                    "x": 5240,
+                    "y": 5120,
+                    "z": 0
+                },
+                {
+                    "x": 5000,
+                    "y": 5120,
+                    "z": 0
+                },
+                {
+                    "x": 5000,
+                    "y": 6760,
+                    "z": 0
+                },
+                {
+                    "x": 4120,
+                    "y": 6760,
+                    "z": 0
+                },
+                {
+                    "x": 4120,
+                    "y": 5120,
+                    "z": 0
+                },
+                {
+                    "x": 6880,
+                    "y": 5120,
+                    "z": 0
+                },
+                {
+                    "x": 6880,
+                    "y": 10000,
+                    "z": 0
+                },
+                {
+                    "x": 7120,
+                    "y": 10000,
+                    "z": 0
+                },
+                {
+                    "x": 7120,
+                    "y": 4880,
+                    "z": 0
+                },
+                {
+                    "x": 2620,
+                    "y": 4880,
+                    "z": 0
+                },
+                {
+                    "x": 2620,
+                    "y": 4120,
+                    "z": 0
+                },
+                {
+                    "x": 3320,
+                    "y": 4120,
+                    "z": 0
+                },
+                {
+                    "x": 3320,
                     "y": 3120,
                     "z": 0
                 },
                 {
                     "x": 14880,
-                    "y": 4880,
-                    "z": 0
-                },
-                {
-                    "x": 10000,
-                    "y": 4880,
-                    "z": 0
-                },
-                {
-                    "x": 10000,
-                    "y": 5120,
-                    "z": 0
-                },
-                {
-                    "x": 14880,
-                    "y": 5120,
-                    "z": 0
-                },
-                {
-                    "x": 14880,
-                    "y": 10120,
-                    "z": 0
-                },
-                {
-                    "x": 19880,
-                    "y": 10120,
-                    "z": 0
-                },
-                {
-                    "x": 19880,
-                    "y": 14880,
-                    "z": 0
-                },
-                {
-                    "x": 15000,
-                    "y": 14880,
-                    "z": 0
-                },
-                {
-                    "x": 15000,
-                    "y": 15120,
-                    "z": 0
-                },
-                {
-                    "x": 19880,
-                    "y": 15120,
-                    "z": 0
-                },
-                {
-                    "x": 19880,
-                    "y": 17880,
-                    "z": 0
-                },
-                {
-                    "x": 18120,
-                    "y": 17880,
-                    "z": 0
-                },
-                {
-                    "x": 18120,
-                    "y": 16000,
-                    "z": 0
-                },
-                {
-                    "x": 17880,
-                    "y": 16000,
-                    "z": 0
-                },
-                {
-                    "x": 17880,
-                    "y": 17880,
-                    "z": 0
-                },
-                {
-                    "x": 12120,
-                    "y": 17880,
-                    "z": 0
-                },
-                {
-                    "x": 12120,
-                    "y": 12880,
-                    "z": 0
-                },
-                {
-                    "x": 10120,
-                    "y": 12880,
-                    "z": 0
-                },
-                {
-                    "x": 10120,
-                    "y": 7000,
-                    "z": 0
-                },
-                {
-                    "x": 9880,
-                    "y": 7000,
-                    "z": 0
-                },
-                {
-                    "x": 9880,
-                    "y": 9880,
-                    "z": 0
-                },
-                {
-                    "x": 7120,
-                    "y": 9880,
-                    "z": 0
-                },
-                {
-                    "x": 7120,
-                    "y": 4880,
-                    "z": 0
-                },
-                {
-                    "x": 2620,
-                    "y": 4880,
-                    "z": 0
-                },
-                {
-                    "x": 2620,
                     "y": 3120,
                     "z": 0
                 }
             ],
             "wallIds": [
-                "outer_wall_1",
                 "outer_wall_2_m",
                 "divide_living_master",
                 "divide_living_master",
@@ -744,14 +1094,33 @@
                 "outer_wall_5",
                 "outer_wall_6",
                 "outer_wall_7",
-                "inner_wall_dining_living_1_m",
-                "inner_wall_dining_living_1_m",
-                "inner_wall_dining_living_1_m",
-                "master_balcony_wall_1",
+                "inner_wall_dining_living_1_m_m",
+                "living_balcony_wall_1",
+                "living_balcony_wall_1",
+                "inner_wall_dining_living_1_m_m",
+                "outer_wall_7",
+                "outer_wall_8",
+                "master_closure_wall",
+                "master_wall_2",
+                "master_wall_1",
+                "master_wall_1",
+                "outer_wall_10",
+                "master_bathroom_wall_1",
+                "master_bathroom_wall_2",
+                "master_bathroom_wall_3",
+                "master_bathroom_wall_4",
+                "master_bathroom_wall_4",
+                "master_bathroom_wall_3",
+                "master_bathroom_wall_2",
+                "master_bedroom_wall_1",
+                "master_bedroom_wall_2",
                 "master_bedroom_wall_2",
                 "master_bedroom_wall_1",
                 "master_bedroom_wall_1",
-                "outer_wall_10"
+                "outer_wall_10",
+                "master_balcony_wall_1",
+                "master_bath_wall_2",
+                "outer_wall_1"
             ],
             "bbox": {
                 "min": {
@@ -765,112 +1134,76 @@
             }
         },
         {
-            "id": "room_3",
-            "name": "主卧",
+            "id": "room_5",
+            "name": "房间C",
             "englishName": "房间C",
-            "area": 96000000,
+            "area": 17500000,
             "points": [
                 {
-                    "x": 6880,
-                    "y": 15120,
+                    "x": 4880,
+                    "y": 13880,
                     "z": 0
                 },
                 {
-                    "x": 6880,
-                    "y": 24880,
+                    "x": 3120,
+                    "y": 13880,
                     "z": 0
                 },
                 {
-                    "x": 2620,
-                    "y": 24880,
+                    "x": 3120,
+                    "y": 9120,
                     "z": 0
                 },
                 {
-                    "x": 2620,
-                    "y": 7120,
+                    "x": 6380,
+                    "y": 9120,
                     "z": 0
                 },
                 {
-                    "x": 4120,
-                    "y": 7120,
+                    "x": 6380,
+                    "y": 13880,
                     "z": 0
                 },
                 {
-                    "x": 4120,
-                    "y": 5120,
+                    "x": 5120,
+                    "y": 13880,
                     "z": 0
                 },
                 {
-                    "x": 6880,
-                    "y": 5120,
+                    "x": 5120,
+                    "y": 10000,
                     "z": 0
                 },
                 {
-                    "x": 6880,
-                    "y": 10120,
-                    "z": 0
-                },
-                {
-                    "x": 9880,
-                    "y": 10120,
-                    "z": 0
-                },
-                {
-                    "x": 9880,
-                    "y": 12880,
-                    "z": 0
-                },
-                {
-                    "x": 6880,
-                    "y": 12880,
-                    "z": 0
-                },
-                {
-                    "x": 6880,
-                    "y": 14880,
-                    "z": 0
-                },
-                {
-                    "x": 5000,
-                    "y": 14880,
-                    "z": 0
-                },
-                {
-                    "x": 5000,
-                    "y": 15120,
+                    "x": 4880,
+                    "y": 10000,
                     "z": 0
                 }
             ],
             "wallIds": [
-                "inner_wall_2",
-                "outer_wall_8",
-                "outer_wall_9",
-                "outer_wall_10",
-                "master_bathroom_wall_1",
-                "master_bathroom_wall_2",
-                "master_bedroom_wall_1",
-                "master_bedroom_wall_2",
-                "master_balcony_wall_1",
-                "inner_wall_dining_living_1_m",
-                "outer_wall_7",
-                "outer_wall_8",
-                "inner_wall_2"
+                "inner_wall_1",
+                "master_closure_wall",
+                "master_bath_wall",
+                "master_wall_1",
+                "master_wall_2",
+                "master_closure_wall",
+                "inner_wall_1"
             ],
             "bbox": {
                 "min": {
-                    "x": 2620,
-                    "y": 5120
+                    "x": 3120,
+                    "y": 9120
                 },
                 "max": {
-                    "x": 9880,
-                    "y": 24880
+                    "x": 6380,
+                    "y": 13880
                 }
             }
         },
         {
-            "id": "room_2",
+            "id": "room_4",
             "name": "厨房",
-            "englishName": "房间B",
+            "englishName": "Kitchen",
             "area": 10000000,
             "points": [
                 {
@@ -912,9 +1245,9 @@
             }
         },
         {
-            "id": "room_1",
+            "id": "room_3",
             "name": "次卧",
-            "englishName": "房间A",
+            "englishName": "Secondary Bedroom",
             "area": 3000000,
             "points": [
                 {
@@ -942,6 +1275,9 @@
                 "master_bathroom_wall_1",
                 "outer_wall_10",
                 "master_bedroom_wall_1",
+                "master_bathroom_wall_2",
+                "master_bathroom_wall_3",
+                "master_bathroom_wall_3",
                 "master_bathroom_wall_2"
             ],
             "bbox": {
@@ -952,6 +1288,95 @@
                 "max": {
                     "x": 3880,
                     "y": 6880
+                }
+            }
+        },
+        {
+            "id": "room_2",
+            "name": "房间B",
+            "englishName": "房间B",
+            "area": 2000000,
+            "points": [
+                {
+                    "x": 5120,
+                    "y": 14120,
+                    "z": 0
+                },
+                {
+                    "x": 6880,
+                    "y": 14120,
+                    "z": 0
+                },
+                {
+                    "x": 6880,
+                    "y": 14880,
+                    "z": 0
+                },
+                {
+                    "x": 5120,
+                    "y": 14880,
+                    "z": 0
+                }
+            ],
+            "wallIds": [
+                "inner_wall_1",
+                "master_closure_wall",
+                "master_closure_wall",
+                "outer_wall_8",
+                "inner_wall_2"
+            ],
+            "bbox": {
+                "min": {
+                    "x": 5120,
+                    "y": 14120
+                },
+                "max": {
+                    "x": 6880,
+                    "y": 14880
+                }
+            }
+        },
+        {
+            "id": "room_1",
+            "name": "房间A",
+            "englishName": "房间A",
+            "area": 700000,
+            "points": [
+                {
+                    "x": 3080,
+                    "y": 3120,
+                    "z": 0
+                },
+                {
+                    "x": 3080,
+                    "y": 3880,
+                    "z": 0
+                },
+                {
+                    "x": 2620,
+                    "y": 3880,
+                    "z": 0
+                },
+                {
+                    "x": 2620,
+                    "y": 3120,
+                    "z": 0
+                }
+            ],
+            "wallIds": [
+                "outer_wall_1",
+                "master_bath_wall_2",
+                "master_balcony_wall_1",
+                "outer_wall_10"
+            ],
+            "bbox": {
+                "min": {
+                    "x": 2620,
+                    "y": 3120
+                },
+                "max": {
+                    "x": 3080,
+                    "y": 3880
                 }
             }
         }

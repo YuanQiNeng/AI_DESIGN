@@ -2,77 +2,77 @@
     "version": "1.0",
     "unit": "mm",
     "centerPos": {
-        "x": 9600,
-        "y": 3000,
+        "x": 11300,
+        "y": 13400,
         "z": 0
     },
     "floorHeight": 2700,
     "wallHeight": 2700,
-    "totalArea": 180000000,
+    "totalArea": 244000000,
     "outerPoints": [
         [
             {
-                "x": 5880,
-                "y": 5120,
+                "x": 15120,
+                "y": 2880,
                 "z": 0
             },
             {
-                "x": 5880,
-                "y": 10120,
+                "x": 15120,
+                "y": 7880,
                 "z": 0
             },
             {
-                "x": 12120,
-                "y": 10120,
+                "x": 20120,
+                "y": 7880,
                 "z": 0
             },
             {
-                "x": 12120,
-                "y": 5120,
+                "x": 20120,
+                "y": 18120,
                 "z": 0
             },
             {
-                "x": 18120,
-                "y": 5120,
+                "x": 11880,
+                "y": 18120,
                 "z": 0
             },
             {
-                "x": 18120,
-                "y": -120,
+                "x": 11880,
+                "y": 13120,
                 "z": 0
             },
             {
-                "x": 12120,
-                "y": -120,
+                "x": 7120,
+                "y": 13120,
                 "z": 0
             },
             {
-                "x": 12120,
-                "y": -5120,
+                "x": 7120,
+                "y": 25120,
                 "z": 0
             },
             {
-                "x": -120,
-                "y": -5120,
+                "x": 2380,
+                "y": 25120,
                 "z": 0
             },
             {
-                "x": -120,
-                "y": 5120,
+                "x": 2380,
+                "y": 2880,
                 "z": 0
             }
         ]
     ],
     "wallList": [
         {
-            "id": "outer_wall_2",
+            "id": "outer_wall_1",
             "startPoint": {
-                "x": 0,
-                "y": 5000
+                "x": 2500,
+                "y": 3000
             },
             "endPoint": {
-                "x": 6000,
-                "y": 5000
+                "x": 15000,
+                "y": 3000
             },
             "thickness": 240,
             "height": 2700,
@@ -86,14 +86,14 @@
             "material": ""
         },
         {
-            "id": "outer_wall_3",
+            "id": "outer_wall_2",
             "startPoint": {
-                "x": 6000,
-                "y": 5000
+                "x": 15000,
+                "y": 3000
             },
             "endPoint": {
-                "x": 6000,
-                "y": 10000
+                "x": 15000,
+                "y": 8000
             },
             "thickness": 240,
             "height": 2700,
@@ -107,14 +107,14 @@
             "material": ""
         },
         {
-            "id": "outer_wall_4",
+            "id": "outer_wall_3",
             "startPoint": {
-                "x": 6000,
-                "y": 10000
+                "x": 15000,
+                "y": 8000
             },
             "endPoint": {
-                "x": 12000,
-                "y": 10000
+                "x": 20000,
+                "y": 8000
             },
             "thickness": 240,
             "height": 2700,
@@ -128,20 +128,41 @@
             "material": ""
         },
         {
-            "id": "outer_wall_5",
+            "id": "outer_wall_4",
             "startPoint": {
-                "x": 12000,
-                "y": 10000
+                "x": 20000,
+                "y": 8000
             },
             "endPoint": {
-                "x": 12000,
-                "y": 5000
+                "x": 20000,
+                "y": 18000
             },
             "thickness": 240,
             "height": 2700,
             "wallNormal": {
-                "x": -1,
+                "x": 1,
                 "y": 0,
+                "z": 0
+            },
+            "leftRight": "left",
+            "wallType": "solid",
+            "material": ""
+        },
+        {
+            "id": "outer_wall_5",
+            "startPoint": {
+                "x": 20000,
+                "y": 18000
+            },
+            "endPoint": {
+                "x": 12000,
+                "y": 18000
+            },
+            "thickness": 240,
+            "height": 2700,
+            "wallNormal": {
+                "x": 0,
+                "y": 1,
                 "z": 0
             },
             "leftRight": "left",
@@ -152,17 +173,17 @@
             "id": "outer_wall_6",
             "startPoint": {
                 "x": 12000,
-                "y": 5000
+                "y": 18000
             },
             "endPoint": {
-                "x": 18000,
-                "y": 5000
+                "x": 12000,
+                "y": 13000
             },
             "thickness": 240,
             "height": 2700,
             "wallNormal": {
-                "x": 0,
-                "y": -1,
+                "x": -1,
+                "y": 0,
                 "z": 0
             },
             "leftRight": "left",
@@ -172,18 +193,18 @@
         {
             "id": "outer_wall_7",
             "startPoint": {
-                "x": 18000,
-                "y": 5000
+                "x": 12000,
+                "y": 13000
             },
             "endPoint": {
-                "x": 18000,
-                "y": 0
+                "x": 7000,
+                "y": 13000
             },
             "thickness": 240,
             "height": 2700,
             "wallNormal": {
-                "x": -1,
-                "y": 0,
+                "x": 0,
+                "y": 1,
                 "z": 0
             },
             "leftRight": "left",
@@ -193,18 +214,18 @@
         {
             "id": "outer_wall_8",
             "startPoint": {
-                "x": 18000,
-                "y": 0
+                "x": 7000,
+                "y": 13000
             },
             "endPoint": {
-                "x": 12000,
-                "y": 0
+                "x": 7000,
+                "y": 25000
             },
             "thickness": 240,
             "height": 2700,
             "wallNormal": {
-                "x": 0,
-                "y": 1,
+                "x": 1,
+                "y": 0,
                 "z": 0
             },
             "leftRight": "left",
@@ -214,33 +235,12 @@
         {
             "id": "outer_wall_9",
             "startPoint": {
-                "x": 12000,
-                "y": 0
+                "x": 7000,
+                "y": 25000
             },
             "endPoint": {
-                "x": 12000,
-                "y": -5000
-            },
-            "thickness": 240,
-            "height": 2700,
-            "wallNormal": {
-                "x": -1,
-                "y": 0,
-                "z": 0
-            },
-            "leftRight": "left",
-            "wallType": "solid",
-            "material": ""
-        },
-        {
-            "id": "outer_wall_10",
-            "startPoint": {
-                "x": 12000,
-                "y": -5000
-            },
-            "endPoint": {
-                "x": 0,
-                "y": -5000
+                "x": 2500,
+                "y": 25000
             },
             "thickness": 240,
             "height": 2700,
@@ -254,19 +254,19 @@
             "material": ""
         },
         {
-            "id": "outer_wall_1_m",
+            "id": "outer_wall_10",
             "startPoint": {
-                "x": 0,
-                "y": -5000
+                "x": 2500,
+                "y": 25000
             },
             "endPoint": {
-                "x": 0,
-                "y": 5000
+                "x": 2500,
+                "y": 3000
             },
             "thickness": 240,
             "height": 2700,
             "wallNormal": {
-                "x": 1,
+                "x": -1,
                 "y": 0,
                 "z": 0
             },
@@ -280,79 +280,79 @@
             "id": "room_1",
             "name": "未命名",
             "englishName": "Unnamed",
-            "area": 180000000,
+            "area": 244000000,
             "points": [
                 {
-                    "x": 120,
-                    "y": -4880,
+                    "x": 14880,
+                    "y": 3120,
                     "z": 0
                 },
                 {
-                    "x": 11880,
-                    "y": -4880,
+                    "x": 14880,
+                    "y": 8120,
                     "z": 0
                 },
                 {
-                    "x": 11880,
-                    "y": 120,
+                    "x": 19880,
+                    "y": 8120,
                     "z": 0
                 },
                 {
-                    "x": 17880,
-                    "y": 120,
+                    "x": 19880,
+                    "y": 17880,
                     "z": 0
                 },
                 {
-                    "x": 17880,
-                    "y": 4880,
+                    "x": 12120,
+                    "y": 17880,
                     "z": 0
                 },
                 {
-                    "x": 11880,
-                    "y": 4880,
+                    "x": 12120,
+                    "y": 12880,
                     "z": 0
                 },
                 {
-                    "x": 11880,
-                    "y": 9880,
+                    "x": 6880,
+                    "y": 12880,
                     "z": 0
                 },
                 {
-                    "x": 6120,
-                    "y": 9880,
+                    "x": 6880,
+                    "y": 24880,
                     "z": 0
                 },
                 {
-                    "x": 6120,
-                    "y": 4880,
+                    "x": 2620,
+                    "y": 24880,
                     "z": 0
                 },
                 {
-                    "x": 120,
-                    "y": 4880,
+                    "x": 2620,
+                    "y": 3120,
                     "z": 0
                 }
             ],
             "wallIds": [
-                "outer_wall_1_m",
-                "outer_wall_10",
-                "outer_wall_9",
-                "outer_wall_8",
-                "outer_wall_7",
-                "outer_wall_6",
-                "outer_wall_5",
-                "outer_wall_4",
+                "outer_wall_1",
+                "outer_wall_2",
                 "outer_wall_3",
-                "outer_wall_2"
+                "outer_wall_4",
+                "outer_wall_5",
+                "outer_wall_6",
+                "outer_wall_7",
+                "outer_wall_8",
+                "outer_wall_9",
+                "outer_wall_10"
             ],
             "bbox": {
                 "min": {
-                    "x": 120,
-                    "y": -4880
+                    "x": 2620,
+                    "y": 3120
                 },
                 "max": {
-                    "x": 17880,
-                    "y": 9880
+                    "x": 19880,
+                    "y": 24880
                 }
             }
         }

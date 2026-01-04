@@ -17,4 +17,4 @@ result=agent.invoke({'messages':[system_message,HumanMessage(content="我想设�
       "wallHeight": 2700,"outerPoints":[],"wallList":[],"roomList":[],"doorList": [],
       "windowList": [],
       "beamList": [],
-      "columnList": []}),config={"configurable": {"thread_id": "3"}})
+      "columnList": []}),config={"configurable": {"thread_id": "3"}},plan=[])

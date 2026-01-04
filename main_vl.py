@@ -50,7 +50,7 @@ system_prompt=f"""你是一位房屋户型绘制设计助手,你需要根据用�
                    5.尽可能使用较少的墙体数量来绘制户型图,比如两个相邻的房间之间只需要绘制一条墙体共用即可,而不是绘制两条墙体,否则会系统很容易出现检测不到房间的情况
                    9.坐标点系统是往右x值变大,往下y值变大
                    11.一般客餐厅是房间封闭区域中面积最大的,而且卧室/厨房等都会与客餐厅直接相邻,卫生间一般与客餐厅/卧室相邻.请默认按照这个规则设计户型，除非用户明确提出不一样的户型设计需求
-                   12.避免整体为规则矩形,设计应包含凹凸转折和非对称布局。整体轮廓呈L型或不规则多边形，拒绝单一矩形框架。禁止使用单一矩形作为外框，需有多个墙体转折形成复杂边界。
+                   12.避免整体为规则矩形,设计应包含凹凸转折和非对称布局。整体轮廓呈L型或不规则多边形,拒绝单一矩形框架。禁止使用单一矩形作为外框,需有多个墙体转折形成复杂边界。
                    13.绘制墙体时最好在当前只专注于一个房间的墙体绘制,而不是同时绘制多个房间的墙体分散任务，要一步一步来
                    14.需要认真思考外围墙体的形状规则布局,多去参考示例户型json的外围墙体布局以及坐标点
                    15.外围墙体应该有超过10个拐折点,也就是说外围墙体至少需要有20个,不能仅仅只是一个很简单的不规则多边形.而且外围墙体尽量不要出现共线的情况,共线的墙体应该是一整个墙体
@@ -58,7 +58,9 @@ system_prompt=f"""你是一位房屋户型绘制设计助手,你需要根据用�
                    13.阳台也算是房间,应该由墙体连接形成封闭区域.
                    14.在初始绘制外围墙体时,不要着急去绘制外围墙体,而是仔细思考外围墙体的坐标点布局以及户型中每一个房间的位置布局,把这些先考虑好再来绘制户型
                    15.如果绘制墙体A时需要与另一个墙体B进行T形连接,那么墙体A的端点必须与墙体B的端点或者内部点连接起来,比如墙体B的端点坐标为(1000,0)与(6000,0),墙体的厚度是240mm,那么墙体A的T形连接的端点为(2000,b)时,b不能是120或者-120,而是0,否则无法被识别为T形连接
-                   16.绘制完墙体后需要给房间进行命名
+                   16.绘制完一个封闭区域后需要及时给该封闭房间区域进行命名
+                   17.由于会话消息会做压缩处理，所以会给你整体的户型设计的规划任务列表以及当前正在执行的任务,每当你要绘制墙体的时候当会对应一个步骤的任务,命名一个房间都会对应一个完成的最新任务
+                   18.在正式绘制户型前,你需要调用add_plan工具来规划任务
                    """
 
 summary_prompt=f"""你是一位总结助手,用来总结户型设计绘制智能体与用户的会话内容，这是户型设计智能体的系统提示词:
@@ -86,11 +88,13 @@ def summary(state: AgentState, runtime: Runtime[tool_runtime]):
         logger.info(state['todos'])
     if isinstance(messages[-1],AIMessage) and messages[-1].response_metadata['token_usage']['total_tokens']>20000:
         logger.info('消息长度超限')
-        state['messages']=[*messages[:4],SystemMessage(content="消息会话省略(由于这部分都是涉及工具调用的消息,没有用户user的消息)......."),messages[-1]]
+        state['messages']=[*messages[:4],SystemMessage(content=f"消息会话省略部分.....\n这是任务规划列表:\n{runtime.context.plan}\n这是当前正在执行的任务:\n{runtime.context.current_task}\n这是已经完成的任务(有可能是当前执行的任务已经完成了):\n{runtime.context.completed_task}\n\n这是整体的布局设计方案:\n{runtime.context.design_state}\n"),messages[-1]]
+        logger.info(f'总结结束')
         return {'messages':[RemoveMessage(id=REMOVE_ALL_MESSAGES),*state['messages']]}
+    logger.info(f'总结结束')
     return state
 agent=create_agent(model_doubao,system_prompt=system_prompt,tools=[draw_wall,Name_romm,get_current_house_type_json],debug=False,context_schema=tool_runtime,
-                   middleware=[TodoListMiddleware(),summary])
+                   middleware=[summary])
 graph=StateGraph(State)
 def chat(state:State):
     if "house_type_json" not in state:
@@ -108,4 +112,4 @@ def chat(state:State):
 graph.add_node('chat',chat)
 graph.add_edge(START,'chat')
 graph.add_edge('chat',END)
-graph_agent=graph.compile(checkpointer=InMemorySaver(serde=JsonPlusSerializer(pickle_fallback=True)))
+graph_agent=graph.compile()

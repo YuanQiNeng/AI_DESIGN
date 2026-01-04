@@ -17,7 +17,7 @@ import json
 from loguru import logger
 script_path=Path(__file__).parent
 sys.path.insert(0,str(script_path))
-from tool_vl import tool_runtime,draw_wall,Name_romm,get_current_house_type_json
+from tool_vl import tool_runtime,draw_wall,Name_romm,get_current_house_type_json,add_plan
 from langchain.agents.middleware import ToolCallLimitMiddleware,TodoListMiddleware,SummarizationMiddleware,before_model,AgentState
 from typing import Optional
 from uuid import uuid4
@@ -93,7 +93,7 @@ def summary(state: AgentState, runtime: Runtime[tool_runtime]):
         return {'messages':[RemoveMessage(id=REMOVE_ALL_MESSAGES),*state['messages']]}
     logger.info(f'总结结束')
     return state
-agent=create_agent(model_doubao,system_prompt=system_prompt,tools=[draw_wall,Name_romm,get_current_house_type_json],debug=False,context_schema=tool_runtime,
+agent=create_agent(model_doubao,system_prompt=system_prompt,tools=[draw_wall,Name_romm,add_plan,get_current_house_type_json],debug=False,context_schema=tool_runtime,
                    middleware=[summary])
 graph=StateGraph(State)
 def chat(state:State):

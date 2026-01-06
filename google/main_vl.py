@@ -1,13 +1,11 @@
 from dotenv import load_dotenv
 load_dotenv()
 from langchain_openai import ChatOpenAI
-import langchain_openai.chat_models.base as openai_base
-from langchain.messages import AIMessage,HumanMessage,ToolMessage,SystemMessage,RemoveMessage
-import os
-import requests
-from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.agents import create_agent
 from langchain.tools import tool
+import os
+import requests
+from langchain.messages import AIMessage,HumanMessage,ToolMessage,SystemMessage,RemoveMessage
 from langchain_core.messages  import BaseMessage
 from langchain.agents.middleware import before_model, after_model, wrap_model_call
 import sys
@@ -22,8 +20,13 @@ sys.path.insert(0,str(script_path))
 from tool_vl import tool_runtime,draw_wall,Name_romm,get_current_house_type_json,add_plan
 from langchain.agents.middleware import ToolCallLimitMiddleware,TodoListMiddleware,SummarizationMiddleware,before_model,AgentState
 from typing import Optional
-from google import genai
-from google.genai import types
+from uuid import uuid4
+from deepagents import create_deep_agent
+from copy import deepcopy
+from langgraph.checkpoint.sqlite import SqliteSaver
+import sqlite3
+from langgraph.checkpoint.memory import InMemorySaver
+from langgraph.checkpoint.serde.jsonplus import JsonPlusSerializer
 with open("json/json2解析.md","r",encoding='utf-8') as f:
     json_prompt=f.read()
 with open("json/example1.json","r",encoding='utf-8') as f:
@@ -33,10 +36,10 @@ with open("json/example1_wall.json",'r',encoding='utf-8') as f:
 with open("/app/AI_Design/AI_Design/户型.txt",'r',encoding='utf-8') as f:
     house_type_ascii=f.read()
 REMOVE_ALL_MESSAGES = "__remove_all__"
-model_doubao=ChatOpenAI(reasoning_effort='high',temperature=0.3,model=os.getenv("DOUBAO_MODEL_NAME_VL"),api_key=os.getenv("DOUBAO_API_KEY"),base_url=os.getenv("DOUABO_BASE_URL"))
+model_doubao=ChatOpenAI(model=os.getenv("DOUBAO_MODEL_NAME_VL"),api_key=os.getenv("DOUBAO_API_KEY"),base_url=os.getenv("DOUABO_BASE_URL"))
 model_minimax=ChatOpenAI(model=os.getenv("MINIMAX_MODEL"),base_url=os.getenv("MINIMAX_BASE_URL"),api_key=os.getenv("MINIMAX_API_KEY"))
 model_aly=ChatOpenAI(model=os.getenv("aly_model_vl"),api_key=os.getenv("aly_api_key"),base_url=os.getenv("aly_base_url"))
-model_gemini=ChatGoogleGenerativeAI(api_key=os.getenv("gemini_api_key"),model="gemini-3-flash-preview",base_url="https://api.modelverse.cn")
+model_gemini=ChatOpenAI(api_key=os.getenv("agicto_api_key"),base_url=os.getenv("agicto_base_url"),model=os.getenv("agicto_model"))
 system_prompt=f"""你是一位房屋户型绘制设计助手,你需要根据用户的户型需求输出/编辑/修改户型json文件,
                    json文件可以导出为一张户型图,这是示例json文件:
                    {house_type_json}
@@ -57,7 +60,7 @@ system_prompt=f"""你是一位房屋户型绘制设计助手,你需要根据用�
                    13.阳台也算是房间,应该由墙体连接形成封闭区域.
                    14.在初始绘制外围墙体时,不要着急去绘制外围墙体,而是仔细思考外围墙体的坐标点布局以及户型中每一个房间的位置布局,把这些先考虑好再来绘制户型
                    15.如果绘制墙体A时需要与另一个墙体B进行T形连接,那么墙体A的端点必须与墙体B的端点或者内部点连接起来,比如墙体B的端点坐标为(1000,0)与(6000,0),墙体的厚度是240mm,那么墙体A的T形连接的端点为(2000,b)时,b不能是120或者-120,而是0,否则无法被识别为T形连接
-                   17.一个房间必须至少与一个房间共一个墙体
+                   17.由于会话消息会做压缩处理，所以会给你整体的户型设计的规划任务列表以及当前正在执行的任务,每当你要绘制墙体的时候当会对应一个步骤的任务,命名一个房间都会对应一个完成的最新任务
                    19.绘制的墙体必须是水平/垂直的,不是歪斜的,并且墙体之间不能是靠得非常近有点重叠的
                    """
 
@@ -91,7 +94,7 @@ def summary(state: AgentState, runtime: Runtime[tool_runtime]):
         return {'messages':[RemoveMessage(id=REMOVE_ALL_MESSAGES),*state['messages']]}
     logger.info(f'总结结束')
     return state
-agent=create_agent(model_doubao,system_prompt=system_prompt,tools=[draw_wall,Name_romm,get_current_house_type_json],debug=True,context_schema=tool_runtime,
+agent=create_agent(model_gemini,system_prompt=system_prompt,tools=[draw_wall,Name_romm,get_current_house_type_json],debug=False,context_schema=tool_runtime,
                    middleware=[TodoListMiddleware()])
 graph=StateGraph(State)
 def chat(state:State):

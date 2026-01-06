@@ -43,7 +43,7 @@ class Wall(BaseModel):
     thickness:float=Field(description="墙体的厚度,默认是240",default=240)
     height:float=Field(description="墙体的高度,默认是1000",default=2700)
     wallType:Literal['solid','partition']=Field(description="墙体的类型,默认是非承重墙",default="partition")
-    material:Literal['未指定',"钢架结构",'轻质砖','混凝土','红砖','木龙骨石膏板','轻钢龙骨石膏板','轻钢龙骨水泥板','硅钙板','钢筋混凝土']=Field(description="墙体的材料,默认是未指定",default="未指定")
+    material:Literal['',"钢架结构",'轻质砖','混凝土','红砖','木龙骨石膏板','轻钢龙骨石膏板','轻钢龙骨水泥板','硅钙板','钢筋混凝土']=Field(description="墙体的材料,默认是空字符串",default="")
 @dataclass
 class tool_runtime:
     image_url:str
@@ -72,7 +72,7 @@ def get_current_house_type_json(runtime:ToolRuntime[tool_runtime]):
         当前的户型json
     """
     return ToolMessage(content=[{'type':'text','text':f'这是当前的户型json:\n{runtime.context.house_type_json}\n这是对应的户型图\n'},
-                                {'type':'image','url':runtime.context.image_url}],tool_call_id=str(uuid4()),name='get_current_house_type_json')
+                                {'type':'image','url':runtime.context.image_url}],tool_call_id=str(uuid4()))
 @tool()
 def Name_romm(names:list[str],completed_task:str,room_ids:list[str],runtime:ToolRuntime[tool_runtime]):
     """
@@ -110,11 +110,7 @@ def Name_romm(names:list[str],completed_task:str,room_ids:list[str],runtime:Tool
     with open('test.json','w',encoding='utf-8') as f:
         p=json.dumps(data_json,ensure_ascii=False,indent=4)
         f.write(p)
-    logger.info('房间命名完成')
-    with open('test.json','w',encoding='utf-8') as f:
-        p=json.dumps(data_json,ensure_ascii=False,indent=4)
-        f.write(p)
-    return HumanMessage(content=[{'type':'text','text':f'这是更新后的房间信息:\n{room_list}\n,这是户型图'},{'type':'image','url':image_url}],
+    return ToolMessage(content=[{'type':'text','text':f'这是更新后的房间信息:\n{room_list}\n,这是户型图'},{'type':'image','url':image_url}],
                        tool_call_id=str(uuid4()))
 
 @tool()
@@ -128,13 +124,13 @@ def draw_wall(walls:list[Wall],task:str,delete_walls:list[str],runtime:ToolRunti
             "thickness":float 墙体的厚度,默认是240,
             "height":float 墙体的高度,默认是1000,
             "wallType":str Literal['solid','partition']=Field(description="墙体的类型,默认是非承重墙",default="partition"),
-            "material":str Literal['未指定',"钢架结构",'轻质砖','混凝土','红砖','木龙骨石膏板','轻钢龙骨石膏板','轻钢龙骨水泥板','硅钙板','钢筋混凝土']=Field(description="墙体的材料,默认是未指定",default="未指定"),
+            "material":str Literal['',"钢架结构",'轻质砖','混凝土','红砖','木龙骨石膏板','轻钢龙骨石膏板','轻钢龙骨水泥板','硅钙板','钢筋混凝土']=Field(description="墙体的材料,默认是空字符串",default=""),
         task (str): 当前绘制墙体对应的任务
         delete_walls (list[str]): 需要删除的墙体id
     Returns:
         Tuple[dict,str]: 更新后处理后的户型json数据,处理报告
     """
-    logger.info(f'开始绘制墙体:{walls}')
+    logger.info('开始绘制墙体')
     runtime.context.current_task=task
     data_json:dict=runtime.context.house_type_json
     wall_list:list[dict]=data_json['wallList']
@@ -154,17 +150,13 @@ def draw_wall(walls:list[Wall],task:str,delete_walls:list[str],runtime:ToolRunti
             wall_list.remove(wall_list[ids.index(w)])
     data_json.update({"wallList":wall_list})
     reports=''
-    logger.info('开始处理重叠墙体')
     for _ in range(3):
         data_json, report = process_house_json(data_json)
         reports+=format_report(report)+'\n\n'
-    logger.info('完成处理重叠墙体')
     path='/app/AI_Design/AI_Design/test1.json'
     now=f"/app/AI_Design/AI_Design/json1/{get_time()}.json"
     wall_list=data_json['wallList']
-    logger.info('开始导出完整的户型')
     data_json=complete_floor_plan(wall_list, [], [], [], [],data_json['roomList'])
-    logger.info('完成导出完整的户型')
     if not data_json:
         logger.error("调用API导出完整户型失败")
         subprocess.run(
@@ -179,7 +171,6 @@ def draw_wall(walls:list[Wall],task:str,delete_walls:list[str],runtime:ToolRunti
         p=json.dumps(data_json,ensure_ascii=False,indent=4)
         f.write(p)
     time=0
-    logger.info('开始获取户型图片')
     while time<5:
         response = requests.post(
         'http://localhost:3000/api/render',
@@ -193,11 +184,10 @@ def draw_wall(walls:list[Wall],task:str,delete_walls:list[str],runtime:ToolRunti
     object_name_on_oss=f"images/{str(uuid4())}.png"
     image_url=upload_image_bytes_to_oss(response.content, object_name_on_oss)
     runtime.context.image_url=image_url
-    logger.info(f'完成获取户型图片,图片地址:{image_url}')
     with open(now.replace('.json','.png'),'wb') as f:
         f.write(response.content)
     content=[{'type':'text','text':f"""这是更新后的户型json数据\n{data_json}\n,这是处理报告\n{reports}\n这是对应的户型图""",
               'type':"image",
               'url':image_url}]
     logger.info(f"当前绘制墙体对应的任务{task}")
-    return HumanMessage(content=content,tool_call_id=str(uuid4()))
+    return ToolMessage(content=content,tool_call_id=str(uuid4()))
